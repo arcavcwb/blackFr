@@ -1,0 +1,68 @@
+---
+import { Image } from 'astro:assets';
+import GameStepCard from './GameStepCard.astro';
+import { participationSteps } from '../data/participationSteps';
+import gdbLogo from '../../../assets/game-da-black/gdb-logo-original.png';
+
+interface Props {
+  id?: string;
+  class?: string;
+}
+
+const { id = 'game-da-black-como-participar', class: className = '' } = Astro.props;
+---
+
+<section
+  id={id}
+  aria-labelledby={`${id}-title`}
+  class:list={[
+    'relative isolate overflow-hidden bg-[linear-gradient(180deg,#03142e_0%,#052453_55%,#02112d_100%)] px-4 pb-16 pt-14 text-white sm:px-6 sm:py-20 lg:px-8',
+    className,
+  ]}
+>
+  <div
+    aria-hidden="true"
+    class="pointer-events-none absolute inset-x-0 top-0 -z-10 h-96 bg-[radial-gradient(ellipse_at_top,rgba(5,89,215,0.48),transparent_75%)]"
+  ></div>
+
+  <div class="mx-auto w-full max-w-[1480px]">
+    <header class="mb-14 flex flex-col items-center gap-2.5 text-center sm:mb-16">
+      <Image
+        src={gdbLogo}
+        alt="GDB — Game da Black, Condor"
+        class="mb-2 h-auto w-28"
+        loading="lazy"
+      />
+      <p class="text-xs font-extrabold tracking-[0.16em] text-[#ffe500] sm:text-sm">
+        COMO PARTICIPAR
+      </p>
+      <h2
+        id={`${id}-title`}
+        class="max-w-[1100px] text-[clamp(1.8rem,3.6vw,3.5rem)] font-black leading-[1.1] tracking-[-0.035em] [text-wrap:balance]"
+      >
+        É muito fácil participar do <span class="text-[#ffe500]">Game da Black</span>
+      </h2>
+      <p class="text-[clamp(0.95rem,1.3vw,1.15rem)] leading-relaxed text-[#e0ecff]">
+        Siga os quatro passos e participe da promoção.
+      </p>
+    </header>
+
+    <ol
+      class="mx-auto grid max-w-[420px] list-none grid-cols-1 gap-x-6 gap-y-12 p-0 min-[641px]:max-w-[820px] min-[641px]:grid-cols-2 min-[1201px]:max-w-none min-[1201px]:grid-cols-4 min-[1201px]:gap-y-6"
+    >
+      {participationSteps.map((step, index) => (
+        <li class="relative min-w-0">
+          <GameStepCard step={step} />
+          {index < participationSteps.length - 1 && (
+            <span
+              aria-hidden="true"
+              class="pointer-events-none absolute -right-[22px] top-[42%] z-10 hidden text-[2.5rem] font-black leading-none text-white [text-shadow:0_0_9px_#00b9ff,0_0_18px_#00b9ff] min-[1201px]:block"
+            >
+              ›
+            </span>
+          )}
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>

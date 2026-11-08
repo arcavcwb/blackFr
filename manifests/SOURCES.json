@@ -1,0 +1,21 @@
+{
+  "sources": [
+    {
+      "archive": "bfAssets.zip",
+      "sha256": "5538c807d42d76be9e4aae574b0b33562861e2e597ac6194a2be6ea8c74a049a",
+      "files": 37
+    },
+    {
+      "archive": "Black_Friday_Condor_2026_TODO_EN_UN_ZIP.zip",
+      "sha256": "04e5999728a3d5d07074a9a566a7f450cf4f9ea6d746d9fad6d5eaa7c75ade63",
+      "files": 163
+    }
+  ],
+  "input_files_total": 200,
+  "input_files_mapped": 200,
+  "alias_deduplicated": 25,
+  "physical_files_from_sources": 175,
+  "new_documentation_and_placeholders": 14,
+  "bytes_all_files_on_disk": 172023895,
+  "notes": "All files from both input ZIP archives mapped by SHA256; source originals preserved byte for byte; exact duplicate files stored once unless paths are required for internal references."
+}

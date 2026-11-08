@@ -1,0 +1,212 @@
+{
+  "status": "experimental-not-approved",
+  "date": "2026-11-08",
+  "method": "Chrome, viewport override; DOM and visual observations recorded through CUA; 15px reserved scrollbar",
+  "measurements": [
+    {
+      "viewport": 390,
+      "max_container": 1280,
+      "actual_container": 343,
+      "card_width": 343,
+      "card_heights": [
+        448,
+        448,
+        608,
+        448
+      ],
+      "columns": 1,
+      "canonical_titles_and_descriptions": true,
+      "horizontal_overflow": false,
+      "card_clipping": false,
+      "all_images_loaded": true
+    },
+    {
+      "viewport": 390,
+      "max_container": 1480,
+      "actual_container": 343,
+      "card_width": 343,
+      "card_heights": [
+        448,
+        448,
+        608,
+        448
+      ],
+      "columns": 1,
+      "canonical_titles_and_descriptions": true,
+      "horizontal_overflow": false,
+      "card_clipping": false,
+      "all_images_loaded": true
+    },
+    {
+      "viewport": 768,
+      "max_container": 1280,
+      "actual_container": 705,
+      "card_width": 342.5,
+      "card_heights": [
+        458,
+        458,
+        618,
+        618
+      ],
+      "columns": 2,
+      "canonical_titles_and_descriptions": true,
+      "horizontal_overflow": false,
+      "card_clipping": false,
+      "all_images_loaded": true
+    },
+    {
+      "viewport": 768,
+      "max_container": 1480,
+      "actual_container": 705,
+      "card_width": 342.5,
+      "card_heights": [
+        458,
+        458,
+        618,
+        618
+      ],
+      "columns": 2,
+      "canonical_titles_and_descriptions": true,
+      "horizontal_overflow": false,
+      "card_clipping": false,
+      "all_images_loaded": true
+    },
+    {
+      "viewport": 1280,
+      "max_container": 1280,
+      "actual_container": 1201,
+      "card_width": 282.25,
+      "card_heights": [
+        656,
+        656,
+        656,
+        656
+      ],
+      "columns": 4,
+      "canonical_titles_and_descriptions": true,
+      "horizontal_overflow": false,
+      "card_clipping": false,
+      "all_images_loaded": true
+    },
+    {
+      "viewport": 1280,
+      "max_container": 1480,
+      "actual_container": 1201,
+      "card_width": 282.25,
+      "card_heights": [
+        656,
+        656,
+        656,
+        656
+      ],
+      "columns": 4,
+      "canonical_titles_and_descriptions": true,
+      "horizontal_overflow": false,
+      "card_clipping": false,
+      "all_images_loaded": true
+    },
+    {
+      "viewport": 1440,
+      "max_container": 1280,
+      "actual_container": 1280,
+      "card_width": 302,
+      "card_heights": [
+        632,
+        632,
+        632,
+        632
+      ],
+      "columns": 4,
+      "canonical_titles_and_descriptions": true,
+      "horizontal_overflow": false,
+      "card_clipping": false,
+      "all_images_loaded": true
+    },
+    {
+      "viewport": 1440,
+      "max_container": 1480,
+      "actual_container": 1361,
+      "card_width": 322.25,
+      "card_heights": [
+        608,
+        608,
+        608,
+        608
+      ],
+      "columns": 4,
+      "canonical_titles_and_descriptions": true,
+      "horizontal_overflow": false,
+      "card_clipping": false,
+      "all_images_loaded": true
+    },
+    {
+      "viewport": 1600,
+      "max_container": 1280,
+      "actual_container": 1280,
+      "card_width": 302,
+      "card_heights": [
+        632,
+        632,
+        632,
+        632
+      ],
+      "columns": 4,
+      "canonical_titles_and_descriptions": true,
+      "horizontal_overflow": false,
+      "card_clipping": false,
+      "all_images_loaded": true
+    },
+    {
+      "viewport": 1600,
+      "max_container": 1480,
+      "actual_container": 1480,
+      "card_width": 352,
+      "card_heights": [
+        608,
+        608,
+        608,
+        608
+      ],
+      "columns": 4,
+      "canonical_titles_and_descriptions": true,
+      "horizontal_overflow": false,
+      "card_clipping": false,
+      "all_images_loaded": true
+    }
+  ],
+  "interactions": {
+    "faq_keyboard_space": true,
+    "focus_visible_outline_px": 3,
+    "tab_skips_unlinked_regulations": true,
+    "faq_synchronized_both_views": true,
+    "resize_height_390_to_1440": [
+      4558,
+      2668
+    ]
+  },
+  "integrity": {
+    "unchanged_files": 97,
+    "canonical_json_embedded_exactly": true,
+    "all_raster_resources_embedded_without_byte_changes": true
+  },
+  "contrast_calculated": {
+    "cta": 13.77,
+    "regulation": 15.08,
+    "faq_answer_open": 10.83,
+    "contact_link": 8.37,
+    "gdb_body_on_lightest_card_stop": 13.45,
+    "gdb_bonus": 14.08
+  },
+  "limits": [
+    "Not an Astro build",
+    "No approval of DS v2",
+    "Direct file URL blocked by browser policy; inspected via local HTTP",
+    "Contrast values are computed pairs, not a complete accessibility audit"
+  ],
+  "parity_audit": {
+    "status": "superseded-for-pair-parity",
+    "explanation": "La validación inicial comprobó cada muestra individual; no garantizaba sincronización tras interacciones. Para paridad A/B usar la evidencia de la auditoría posterior.",
+    "evidence": "evidencia-paridad.json",
+    "diagnosis": "auditoria-paridad.md"
+  }
+}

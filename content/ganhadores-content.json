@@ -1,0 +1,46 @@
+{
+  "seo": {
+    "title": "Ganhadores Condor Premia | Black Friday Condor 2026",
+    "description": "Confira os ganhadores dos sorteios da campanha Condor Premia."
+  },
+  "fonte": {
+    "url": "https://script.google.com/macros/s/AKfycbxkg-txwOYpHg04yxuqf1S-hpvQz3fh1Fl7fkP7tgRj0HC5Xa08ga2S_YgVjEzqJjF3pQ/exec",
+    "aba": "Condor Premia",
+    "timeoutMs": 45000,
+    "tentativas": 3,
+    "esperasMs": [
+      5000,
+      15000
+    ],
+    "permitirVazio": false,
+    "releituraMin": 5,
+    "esperaPrimeiraMs": 8000
+  },
+  "voltar": {
+    "rotulo": "Voltar",
+    "href": "/black-friday/",
+    "ariaLabel": "Voltar para a página da Black Friday"
+  },
+  "titulo": "Ganhadores Condor Premia",
+  "subtitulo": "Confira os ganhadores dos sorteios da campanha Condor Premia.",
+  "sorteio": {
+    "rotulo": "Sorteio",
+    "data": "Data:",
+    "um": "Ganhador",
+    "varios": "Ganhadores",
+    "cta": "Ver ganhadores",
+    "fechar": "Fechar",
+    "premio": "Prêmio:",
+    "loja": "Loja:",
+    "lojaPadrao": "Condor",
+    "ariaLabel": "Ver ganhadores do sorteio {numero} de {data}"
+  },
+  "vazio": {
+    "titulo": "Sorteios em breve",
+    "texto": "Os resultados desta campanha ainda não foram publicados. Volte a consultar esta página em breve para conferir os ganhadores."
+  },
+  "indisponivel": {
+    "titulo": "Lista em atualização",
+    "texto": "Não conseguimos carregar os ganhadores agora. Volte em alguns minutos."
+  }
+}

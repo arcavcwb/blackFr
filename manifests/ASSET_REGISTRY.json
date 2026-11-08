@@ -1,0 +1,1832 @@
+[
+  {
+    "path": "AGENTS.md",
+    "sha256": "4ea7d6fb33ee8b4e53e9ce5fd75017c9daf23f376d5afd250f50fc7046d34d85",
+    "size_bytes": 2250,
+    "role": "new_documentation",
+    "status": "new",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "README.md",
+    "sha256": "1bfc5da1be1a1055bcebe1ffb6bd7eca189af6c1049c8aa3b2e2fac6055a715b",
+    "size_bytes": 3024,
+    "role": "new_documentation",
+    "status": "new",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "assets/derived/branding/README.txt",
+    "sha256": "8e69f5eb89ca428c7169968712376121c36b1221011ab5d58277d219845bbe83",
+    "size_bytes": 275,
+    "role": "derived_reference",
+    "status": "derived_unverified_for_brand_master",
+    "extension": ".txt",
+    "dimensions": ""
+  },
+  {
+    "path": "assets/derived/branding/logo-clube-condor-adicional.png",
+    "sha256": "2f6d11bcb437b53c23fe3f052acdab5f7120b4d4af232b39f8e71058196ead4d",
+    "size_bytes": 26492,
+    "role": "derived_reference",
+    "status": "derived_unverified_for_brand_master",
+    "extension": ".png",
+    "dimensions": "239x119",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/branding/logo-clube-condor-recorte-fiel.png",
+    "sha256": "c16e20aba40b702346f03a1eac4fa93002f33cdac170e22d329775edfef20fb1",
+    "size_bytes": 26041,
+    "role": "derived_reference",
+    "status": "derived_unverified_for_brand_master",
+    "extension": ".png",
+    "dimensions": "239x119",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/branding/logo-gdb-recorte-fiel.png",
+    "sha256": "5a66429b4dddfd70834016b167017363737f8979ec599702de437222761e12bb",
+    "size_bytes": 163627,
+    "role": "derived_reference",
+    "status": "derived_unverified_for_brand_master",
+    "extension": ".png",
+    "dimensions": "280x311",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/branding/logo-gdb-silueta-extraida.png",
+    "sha256": "a2d2999c7ba599d00c3de633f2e28b2419bb3e3e703eee875a7a180e82b35135",
+    "size_bytes": 80875,
+    "role": "derived_reference",
+    "status": "derived_unverified_for_brand_master",
+    "extension": ".png",
+    "dimensions": "196x206",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/cards-completos/passo-01-cadastre-se.png",
+    "sha256": "2c612c2ff0450af7a35f8734ddc35d6431b0d2d6999ee758ffb4f2bd12c4ac16",
+    "size_bytes": 70829,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "244x370",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/cards-completos/passo-02-faca-compras.png",
+    "sha256": "95d95b8c72c1e4d51942fd810b75067b1ddab988c4019d7f15d2ff5aee8f4275",
+    "size_bytes": 50899,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "246x370",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/cards-completos/passo-03-numeros-da-sorte.png",
+    "sha256": "c36b0d825d802662a5bf4f9f6819afedc91031da539dc81450ceac13fc8548d0",
+    "size_bytes": 53689,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "246x370",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/cards-completos/passo-04-pronto.png",
+    "sha256": "57aed9ba419dab0dc4c6c83165f200b4031da16825a09434309042709cc6c882",
+    "size_bytes": 50628,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "245x370",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/passo-01-cadastro/botao-baixe-aplicativo.png",
+    "sha256": "7f9bfeae9e1566277312cc350270339cb8dedb47f738a23d86bdff28fd18331a",
+    "size_bytes": 7058,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "159x35",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/passo-01-cadastro/descricao.png",
+    "sha256": "626eac900b0621181929499cad2e7fc44178c312db47ea064df77b888d8a44e4",
+    "size_bytes": 8424,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "194x46",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/passo-01-cadastro/icone-celular.png",
+    "sha256": "5b64b3120c0fd5faadcb66a516d2e5be7ff942f087ba7a61c7148d5cd52484c0",
+    "size_bytes": 36965,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "131x149",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/passo-01-cadastro/logo-clube-condor-extraido.png",
+    "sha256": "5991f165e70086736ff5084952d1ed4963ee5871f9804a3c8861d9b345fdb751",
+    "size_bytes": 7092,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "79x42",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/passo-01-cadastro/numero-01.png",
+    "sha256": "090b34c5324347359297e305159c1af6d3bc50c06ce37dc92f289a5a78818106",
+    "size_bytes": 3049,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "45x46",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/passo-01-cadastro/titulo.png",
+    "sha256": "558612171ba7caa0fd4dda01bd5119e4837e0280838f712d4332ace9e46033cb",
+    "size_bytes": 3424,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "121x30",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/passo-02-compras/descricao.png",
+    "sha256": "69c12fb9d80b2ea293ca238a8ad8fc1053d40620305d76a34fb9381f2d6a89d3",
+    "size_bytes": 6636,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "200x50",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/passo-02-compras/icone-carrinho.png",
+    "sha256": "84a554269c95ec2b7b68c558599a0771e8cbe7f861938257a1dd7b5f4ddb3923",
+    "size_bytes": 28695,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "155x127",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/passo-02-compras/numero-02.png",
+    "sha256": "ec6b9c124263da4543d1c90cd8ab2c4b24e73d201cbca34f6f18449e65d553cc",
+    "size_bytes": 3526,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "45x45",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/passo-02-compras/titulo.png",
+    "sha256": "623eb0864f89d6a800250b0abb89fd11aaa5761f3741ab8e68383f1bdc0e917b",
+    "size_bytes": 2819,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "176x17",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/passo-03-numeros-sorte/descricao.png",
+    "sha256": "eea97c18468cd1715da621ba4afd4e802cf44a5a5b341b52f40e4ddd04125459",
+    "size_bytes": 8390,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "179x66",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/passo-03-numeros-sorte/icone-cupons.png",
+    "sha256": "790f6d835c4b3ded29bf0579da2ecc15ade2a973354823c4edee7d7c8c6ea719",
+    "size_bytes": 29438,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "155x150",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/passo-03-numeros-sorte/numero-03.png",
+    "sha256": "6cfd6f74a6b85c0cb734c2adf23087c92c4d48d9c9a8d913ae45e9175aa8afac",
+    "size_bytes": 3586,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "45x45",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/passo-03-numeros-sorte/titulo.png",
+    "sha256": "47ddb944e95a7d271e032dd00ead19fbc6142295f34e12b3a92b9eb847c062d4",
+    "size_bytes": 4786,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "175x32",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/passo-04-participacao/descricao.png",
+    "sha256": "f22ca59c795e36239421b01d34f68cc1b48cf4693377d6bd8444c56dd1156f27",
+    "size_bytes": 11956,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "200x78",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/passo-04-participacao/icone-trevo.png",
+    "sha256": "c5a272b8e5e756dad26cb0fbbd122a34a6ccf0fb55b1bef6e757beb970afeeaa",
+    "size_bytes": 25177,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "125x118",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/passo-04-participacao/numero-04.png",
+    "sha256": "600d0f723c72c5d7a3862e66a98b967a2dad84e4a03f7e064e0223578df171a0",
+    "size_bytes": 3515,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "49x45",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/passos/passo-04-participacao/titulo.png",
+    "sha256": "29c00cdf31266cca68cc88b77ea314339c83a1c4078af5ce0338c8d418f89e4e",
+    "size_bytes": 1174,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "55x18",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/premios/premio-01-500-mil-reais.png",
+    "sha256": "dc9b03761b97d654d8223b2b1d3ad78a3487276a0ab708ea95c46de610c2c953",
+    "size_bytes": 549417,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "1144x379",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/premios/premio-02-30-vales-compras.png",
+    "sha256": "ccdf8da55a8f4a544d330df5438c4ef5ecc0d325c06ca9f3808ef875a328ca07",
+    "size_bytes": 229311,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "403x422",
+    "alpha": true
+  },
+  {
+    "path": "assets/derived/condor-premia/premios/premio-03-um-ano-supermercado-gratis.png",
+    "sha256": "e658c0c68e9bd30237deafe8438592a7a54184810377dc9a12b35fca77455194",
+    "size_bytes": 240042,
+    "role": "asset_derived",
+    "status": "user_supplied_derived_unmodified",
+    "extension": ".png",
+    "dimensions": "404x435",
+    "alpha": true
+  },
+  {
+    "path": "assets/generated/game-da-black/cards-aprovados/card-01-comece-pelo-app.png",
+    "sha256": "f7507d266fb76857c1165a014245c75210f3e1913cdd53ed7fcfdf43bd0e6a6a",
+    "size_bytes": 277553,
+    "role": "generated_approved_card",
+    "status": "generated_design_asset",
+    "extension": ".png",
+    "dimensions": "396x565",
+    "alpha": true
+  },
+  {
+    "path": "assets/generated/game-da-black/cards-aprovados/card-02-ative-antes-de-comprar.png",
+    "sha256": "2766f1f99bae7c6b145eed8357245d6e41e00cd8d3e9eab87fdac7a6127d8051",
+    "size_bytes": 295556,
+    "role": "generated_approved_card",
+    "status": "generated_design_asset",
+    "extension": ".png",
+    "dimensions": "396x565",
+    "alpha": true
+  },
+  {
+    "path": "assets/generated/game-da-black/cards-aprovados/card-03-compre-e-ganhe-numeros.png",
+    "sha256": "9d714c96ac04291debc092e66083a53b7fbc09113f645ee2ddba8dcf7e98aad6",
+    "size_bytes": 304228,
+    "role": "generated_approved_card",
+    "status": "generated_design_asset",
+    "extension": ".png",
+    "dimensions": "396x565",
+    "alpha": true
+  },
+  {
+    "path": "assets/generated/game-da-black/cards-aprovados/card-04-confira-seus-numeros.png",
+    "sha256": "7c2012b266073a08dda9e812f03890b86ebdf12a15753890ba1be26b2d50a342",
+    "size_bytes": 297732,
+    "role": "generated_approved_card",
+    "status": "generated_design_asset",
+    "extension": ".png",
+    "dimensions": "396x565",
+    "alpha": true
+  },
+  {
+    "path": "assets/generated/game-da-black/recortes-referencia/card-01-comece-pelo-app.png",
+    "sha256": "c12f519d92e0aff3c09c7250293b437d302ff85851a54f3394bee23f1a40796a",
+    "size_bytes": 244471,
+    "role": "generated_approved_card",
+    "status": "generated_design_asset",
+    "extension": ".png",
+    "dimensions": "396x565",
+    "alpha": false
+  },
+  {
+    "path": "assets/generated/game-da-black/recortes-referencia/card-02-ative-antes-de-comprar.png",
+    "sha256": "47686df2e1aaebefaefad63b9a29f5afb177ca71237d6cbd1aff972864b31fac",
+    "size_bytes": 259431,
+    "role": "generated_approved_card",
+    "status": "generated_design_asset",
+    "extension": ".png",
+    "dimensions": "396x565",
+    "alpha": false
+  },
+  {
+    "path": "assets/generated/game-da-black/recortes-referencia/card-03-compre-e-ganhe-numeros.png",
+    "sha256": "8bda96ba150662364632db8da762943e0dd477576254912f04552decf88b4e13",
+    "size_bytes": 267226,
+    "role": "generated_approved_card",
+    "status": "generated_design_asset",
+    "extension": ".png",
+    "dimensions": "396x565",
+    "alpha": false
+  },
+  {
+    "path": "assets/generated/game-da-black/recortes-referencia/card-04-confira-seus-numeros.png",
+    "sha256": "961dd6f42969041e077d1d98b1f9d59b6a576fb9cab6343ac26536d95b50ecb0",
+    "size_bytes": 262204,
+    "role": "generated_approved_card",
+    "status": "generated_design_asset",
+    "extension": ".png",
+    "dimensions": "396x565",
+    "alpha": false
+  },
+  {
+    "path": "assets/optimized/README.md",
+    "sha256": "d0cdad6f6c94dede932f139b699f29b3e3fc61a4b5675e569d1750398f156e4d",
+    "size_bytes": 93,
+    "role": "new_placeholder",
+    "status": "new",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "assets/originals/branding/logo-clube-condor-fornecido-96px.png",
+    "sha256": "ce4f138a32e2970b0e37a992d00f4536517a8977e113ef6a196bdee8f3d6a8d7",
+    "size_bytes": 17346,
+    "role": "asset_original",
+    "status": "user_supplied_original_unmodified",
+    "extension": ".png",
+    "dimensions": "96x96",
+    "alpha": true
+  },
+  {
+    "path": "assets/originals/branding/logo-condor-com-sombra.png",
+    "sha256": "8d5c8fa4168b2ac1187c9d408661c3ea43ec4d1cebce4c4fc131881fcd3469ec",
+    "size_bytes": 4153,
+    "role": "asset_original",
+    "status": "user_supplied_original_unmodified",
+    "extension": ".png",
+    "dimensions": "134x36",
+    "alpha": true
+  },
+  {
+    "path": "assets/originals/condor-premia/aviso/icone-alerta-exclamacao.png",
+    "sha256": "3750da3f6141945e3c016e5b17f6596eb237d89a077624c3841a9cb04ec2ebeb",
+    "size_bytes": 17513,
+    "role": "asset_original",
+    "status": "user_supplied_original_unmodified",
+    "extension": ".png",
+    "dimensions": "164x164",
+    "alpha": true
+  },
+  {
+    "path": "assets/originals/condor-premia/premios/composicao-premios-fornecida.png",
+    "sha256": "67e6e5ded30a781911dfdaa7b685a10a9efe591d8f888d84ee79e81cbdc64502",
+    "size_bytes": 1093083,
+    "role": "asset_original",
+    "status": "user_supplied_original_unmodified",
+    "extension": ".png",
+    "dimensions": "1144x853",
+    "alpha": true
+  },
+  {
+    "path": "assets/originals/game-da-black/gdb-key-visual-v03.png",
+    "sha256": "6767e27191e47a2b5cfc54309bc0136ca1f7b4d696a2ee5425a58b39328c81d1",
+    "size_bytes": 1635214,
+    "role": "asset_original",
+    "status": "user_supplied_original_unmodified",
+    "extension": ".png",
+    "dimensions": "1346x757",
+    "alpha": true
+  },
+  {
+    "path": "assets/originals/hero/hero-apresentadora-v04.png",
+    "sha256": "cec79fb557fde545893f85c39d942eee6404112fdd6ca2b4b414efac2a7e9b63",
+    "size_bytes": 540950,
+    "role": "asset_original",
+    "status": "user_supplied_original_unmodified",
+    "extension": ".png",
+    "dimensions": "650x661",
+    "alpha": true
+  },
+  {
+    "path": "assets/originals/hero/hero-fundo-figma-v04.png",
+    "sha256": "c53e803ca5c16da0c43f03193c093f815fcf5089843a6055a236cc68a9d856eb",
+    "size_bytes": 1112800,
+    "role": "asset_original",
+    "status": "user_supplied_original_unmodified",
+    "extension": ".png",
+    "dimensions": "1440x914",
+    "alpha": true
+  },
+  {
+    "path": "assets/originals/hero/hero-titulo-black-todo-dia-v04.png",
+    "sha256": "0fa961701d3c378b8a056844857dbdd6ce2d1e5a9671b62b7dc169225f71ea87",
+    "size_bytes": 560168,
+    "role": "asset_original",
+    "status": "user_supplied_original_unmodified",
+    "extension": ".png",
+    "dimensions": "791x433",
+    "alpha": true
+  },
+  {
+    "path": "assets/originals/video/video-black-todo-dia-fonte.mov",
+    "sha256": "4c4c83ac4f11e9f10321346fd9ed1f5a65bdbc5a3a4d0554762b7187b262294f",
+    "size_bytes": 95036244,
+    "role": "asset_original",
+    "status": "user_supplied_original_unmodified",
+    "extension": ".mov",
+    "dimensions": ""
+  },
+  {
+    "path": "content/ganhadores-content.json",
+    "sha256": "8e29df1b50b9620fdb6afecaf5083f56f087ab5d2259e49468bae8ee7f58ff42",
+    "size_bytes": 1425,
+    "role": "content_source",
+    "status": "user_supplied_content_unmodified",
+    "extension": ".json",
+    "dimensions": ""
+  },
+  {
+    "path": "content/landing-content.json",
+    "sha256": "1c8a6b09670a4bb4b7ec29a3a1cc7696b8c7e7a972e734ff03da407455e3d3cb",
+    "size_bytes": 8778,
+    "role": "content_source",
+    "status": "user_supplied_content_unmodified",
+    "extension": ".json",
+    "dimensions": ""
+  },
+  {
+    "path": "design-system/v1/DESIGN_SYSTEM.md",
+    "sha256": "a2674cb204c04e92791a96f87ca5aea7504599b01f36ad13f3cb8370f14f6890",
+    "size_bytes": 13268,
+    "role": "design_system",
+    "status": "design_system_v1_proposal",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "design-system/v1/GUIA_VISUAL.html",
+    "sha256": "ae5384d2b4059de9442ae87f6e2ad6e0c8505aa30cd6fbb76fe42d76137f00b8",
+    "size_bytes": 19295,
+    "role": "design_system",
+    "status": "design_system_v1_proposal",
+    "extension": ".html",
+    "dimensions": ""
+  },
+  {
+    "path": "design-system/v1/README.md",
+    "sha256": "5780f1281404dd83cf01feaf32ddf96797873bf37ea699554260649fee531d1e",
+    "size_bytes": 1430,
+    "role": "design_system",
+    "status": "design_system_v1_proposal",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "design-system/v1/assets/clube-original-referencia.png",
+    "sha256": "2f6d11bcb437b53c23fe3f052acdab5f7120b4d4af232b39f8e71058196ead4d",
+    "size_bytes": 26492,
+    "role": "design_system",
+    "status": "design_system_v1_proposal",
+    "extension": ".png",
+    "dimensions": "239x119",
+    "alpha": true
+  },
+  {
+    "path": "design-system/v1/assets/gdb-banner-original.png",
+    "sha256": "278711b7b9c8c5603a2177e07376d5a759aa32569025f56dfda957bf79d0612e",
+    "size_bytes": 765946,
+    "role": "design_system",
+    "status": "design_system_v1_proposal",
+    "extension": ".png",
+    "dimensions": "907x528",
+    "alpha": true
+  },
+  {
+    "path": "design-system/v1/assets/gdb-original-referencia.png",
+    "sha256": "a2d2999c7ba599d00c3de633f2e28b2419bb3e3e703eee875a7a180e82b35135",
+    "size_bytes": 80875,
+    "role": "design_system",
+    "status": "design_system_v1_proposal",
+    "extension": ".png",
+    "dimensions": "196x206",
+    "alpha": true
+  },
+  {
+    "path": "design-system/v1/assets/illustration-step-1.png",
+    "sha256": "4b6b6417740b1b171c62526f16b80d24beb2c306b75b281a38f02cb95e05330f",
+    "size_bytes": 103070,
+    "role": "design_system",
+    "status": "design_system_v1_proposal",
+    "extension": ".png",
+    "dimensions": "292x271",
+    "alpha": true
+  },
+  {
+    "path": "design-system/v1/assets/illustration-step-2.png",
+    "sha256": "de0860c53269cea78249e1bbc6d824d7ce35d6bf25dfd622e9135ee56646b7c8",
+    "size_bytes": 124297,
+    "role": "design_system",
+    "status": "design_system_v1_proposal",
+    "extension": ".png",
+    "dimensions": "310x270",
+    "alpha": true
+  },
+  {
+    "path": "design-system/v1/assets/illustration-step-3.png",
+    "sha256": "98894373fff2222ad6c664173656e9b0178f0b305898d307055052e14c633da8",
+    "size_bytes": 82406,
+    "role": "design_system",
+    "status": "design_system_v1_proposal",
+    "extension": ".png",
+    "dimensions": "298x166",
+    "alpha": true
+  },
+  {
+    "path": "design-system/v1/assets/illustration-step-4.png",
+    "sha256": "67222a0b2cf8e400270516b41afda8411bb5a392352d6078197a02c1a17e8fff",
+    "size_bytes": 113087,
+    "role": "design_system",
+    "status": "design_system_v1_proposal",
+    "extension": ".png",
+    "dimensions": "286x269",
+    "alpha": true
+  },
+  {
+    "path": "design-system/v1/assets/premios-original.png",
+    "sha256": "c0f9fd64d8f3e69f75e8bab4207e3992e911d0b29674a1cc0175096396d2b95f",
+    "size_bytes": 1272075,
+    "role": "design_system",
+    "status": "design_system_v1_proposal",
+    "extension": ".png",
+    "dimensions": "1144x853",
+    "alpha": true
+  },
+  {
+    "path": "design-system/v1/design-tokens.css",
+    "sha256": "5b2597ea9ed665bf78bb0cf2f2787435e9ea358d763277abed84355ae9d4b525",
+    "size_bytes": 1424,
+    "role": "design_system",
+    "status": "design_system_v1_proposal",
+    "extension": ".css",
+    "dimensions": ""
+  },
+  {
+    "path": "design-system/v1/design-tokens.json",
+    "sha256": "ac6ebc477cc729765551f8b14d94be2cea9a8ec687c7034b917976562683e19a",
+    "size_bytes": 1589,
+    "role": "design_system",
+    "status": "design_system_v1_proposal",
+    "extension": ".json",
+    "dimensions": ""
+  },
+  {
+    "path": "docs/ARCHITECTURE.md",
+    "sha256": "77e3343a7010b8d0cd7db43739356aced90ff3163a8c8d7b8d94bfed9a9e7792",
+    "size_bytes": 1503,
+    "role": "new_documentation",
+    "status": "new",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "docs/CONTENT_GAPS.md",
+    "sha256": "b676737663d0af595ecfde2f6170120c6b3b1487833f02e4a88e29bc960a5448",
+    "size_bytes": 1022,
+    "role": "new_documentation",
+    "status": "new",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "docs/DESIGN_DECISIONS.md",
+    "sha256": "7cb7fd56261c4cae6dba806db5967eeb72fb166357f6a3d2897134d4328f7300",
+    "size_bytes": 1313,
+    "role": "new_documentation",
+    "status": "new",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "docs/NAMING_CONVENTIONS.md",
+    "sha256": "1193e26af31178da750a27c927443eabf83bab93bed4806497d56c9acb56b499",
+    "size_bytes": 1447,
+    "role": "new_documentation",
+    "status": "new",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "docs/PROJECT_CONTEXT.md",
+    "sha256": "0a87f3aecbce047c06665dd1c95e76568bf30992598a68a0ea8052f2e7660038",
+    "size_bytes": 2236,
+    "role": "new_documentation",
+    "status": "new",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "docs/archive/master-v1/c-h-e-c-k-l-i-s-t--q-a--v-i-s-u-a-l.md",
+    "sha256": "0db1d7c1f5cb3cccde476e373ecafdc6a6c1450e1608acb7990acbcf2527e773",
+    "size_bytes": 1311,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "docs/archive/master-v1/catalogo-visual-obsoleto.html",
+    "sha256": "a5b8e4e45495355e23ee9ad1a1c1ae813715d7b10bc6d09b28b2878195ebd92d",
+    "size_bytes": 7539,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".html",
+    "dimensions": ""
+  },
+  {
+    "path": "docs/archive/master-v1/d-e-c-i-s-i-o-n-e-s--y--p-e-n-d-i-e-n-t-e-s.md",
+    "sha256": "d9e4c948997be0420ee68d21b77150715b8062bcee670cd58ac297a5aaecab32",
+    "size_bytes": 2321,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "docs/archive/master-v1/g-u-i-a--d-e--e-s-t-r-u-c-t-u-r-a.md",
+    "sha256": "40e39d007b6f69ba645863739ee373c9a2213e86cc007b27d624de70c3cf28c6",
+    "size_bytes": 2056,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "docs/archive/master-v1/inventario-pre-fusion.csv",
+    "sha256": "7f359e8f7e2ea706890622e2b97f1b626509db4526234cd45e4711257c340e16",
+    "size_bytes": 51190,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".csv",
+    "dimensions": ""
+  },
+  {
+    "path": "docs/archive/master-v1/leer-primero.md",
+    "sha256": "08b782bdc9efc051ed51e6b4b5b88d57bf9a9f3e5ba197907d889f0fa5d8f055",
+    "size_bytes": 1252,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "docs/archive/master-v1/p-r-o-j-e-c-t--c-o-n-t-e-x-t.md",
+    "sha256": "260ac4d53d52972ac6c4d561dd358e2840f7d966cc468fae7ca13d4b481e8258",
+    "size_bytes": 2868,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "docs/archive/master-v1/resumen-pre-fusion.json",
+    "sha256": "938e9feaa9b3e9ff8bf192377204736cc7e8abc7a74a0c43c656b40113b13e20",
+    "size_bytes": 1044,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".json",
+    "dimensions": ""
+  },
+  {
+    "path": "docs/implementation/integracion.md",
+    "sha256": "98c17378a05be4fd9c073bc68a987a9791b49c4386279b3a878d02dbc1f7f0be",
+    "size_bytes": 3956,
+    "role": "reference",
+    "status": "reference",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "docs/implementation/readme.md",
+    "sha256": "12f07db11fcf9adf5d6aa386d2eaa42fac122f618f615bfb8e75f82bf85e2707",
+    "size_bytes": 1667,
+    "role": "reference",
+    "status": "reference",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "references/approved/game-da-black/passos-quatro-composicion-aprobada.png",
+    "sha256": "1865a270a6a6bdc411c4980f6986b4c5b0e590552c4ef067d63e4476419400b5",
+    "size_bytes": 1829383,
+    "role": "approved_reference",
+    "status": "approved_design_reference",
+    "extension": ".png",
+    "dimensions": "1672x941",
+    "alpha": false
+  },
+  {
+    "path": "references/approved/game-da-black/passos-quatro-composicion-logos-recortados.png",
+    "sha256": "d8dc4a234fbc536fe06ce4c039ea007adf55aed0bb25dbba7ece956ef3c926e5",
+    "size_bytes": 1771984,
+    "role": "approved_reference",
+    "status": "approved_design_reference",
+    "extension": ".png",
+    "dimensions": "1997x787",
+    "alpha": false
+  },
+  {
+    "path": "references/approved/game-da-black/passos-quatro-vista-previa.png",
+    "sha256": "370e4027fc6756d4387903f1f8697845bd7e52bd93dd96213d134897415aca12",
+    "size_bytes": 1000300,
+    "role": "approved_reference",
+    "status": "approved_design_reference",
+    "extension": ".png",
+    "dimensions": "1684x605",
+    "alpha": false
+  },
+  {
+    "path": "references/approved/parte-inferior/PREVIEW.html",
+    "sha256": "1430b42efcdbc43b499c9b874eb588643bc35bab08c604885910f009b58d1305",
+    "size_bytes": 6660,
+    "role": "approved_reference",
+    "status": "approved_design_reference",
+    "extension": ".html",
+    "dimensions": ""
+  },
+  {
+    "path": "references/approved/parte-inferior/captura-desktop.png",
+    "sha256": "2d7fe20aadfaeb2190b040e53cf4e132f1e00fb068e46e126beff3e53fca53f9",
+    "size_bytes": 788916,
+    "role": "approved_reference",
+    "status": "approved_design_reference",
+    "extension": ".png",
+    "dimensions": "1440x1790",
+    "alpha": false
+  },
+  {
+    "path": "references/approved/parte-inferior/captura-mobile.png",
+    "sha256": "4f6895f5f6af934581da4785e72db49129c6372dd76cfd5ea4d067c4a7f2f5cc",
+    "size_bytes": 947135,
+    "role": "approved_reference",
+    "status": "approved_design_reference",
+    "extension": ".png",
+    "dimensions": "390x3594",
+    "alpha": false
+  },
+  {
+    "path": "references/approved/parte-inferior/preview-assets/step-1.png",
+    "sha256": "f7507d266fb76857c1165a014245c75210f3e1913cdd53ed7fcfdf43bd0e6a6a",
+    "size_bytes": 277553,
+    "role": "approved_reference",
+    "status": "approved_design_reference",
+    "extension": ".png",
+    "dimensions": "396x565",
+    "alpha": true
+  },
+  {
+    "path": "references/approved/parte-inferior/preview-assets/step-2.png",
+    "sha256": "2766f1f99bae7c6b145eed8357245d6e41e00cd8d3e9eab87fdac7a6127d8051",
+    "size_bytes": 295556,
+    "role": "approved_reference",
+    "status": "approved_design_reference",
+    "extension": ".png",
+    "dimensions": "396x565",
+    "alpha": true
+  },
+  {
+    "path": "references/approved/parte-inferior/preview-assets/step-3.png",
+    "sha256": "9d714c96ac04291debc092e66083a53b7fbc09113f645ee2ddba8dcf7e98aad6",
+    "size_bytes": 304228,
+    "role": "approved_reference",
+    "status": "approved_design_reference",
+    "extension": ".png",
+    "dimensions": "396x565",
+    "alpha": true
+  },
+  {
+    "path": "references/approved/parte-inferior/preview-assets/step-4.png",
+    "sha256": "7c2012b266073a08dda9e812f03890b86ebdf12a15753890ba1be26b2d50a342",
+    "size_bytes": 297732,
+    "role": "approved_reference",
+    "status": "approved_design_reference",
+    "extension": ".png",
+    "dimensions": "396x565",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/auditoria_screenshots/audit_part_1.png",
+    "sha256": "79bb552ec5f7507b557c7e5693b02c9362e59d93dcce27defdda75619ef86d2f",
+    "size_bytes": 734937,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "772x1200",
+    "alpha": false
+  },
+  {
+    "path": "references/archive/master-v1/auditoria_screenshots/audit_part_2.png",
+    "sha256": "ce614fc3526b10d7ee28cef12d38695cef179282f5af2f12deb4910f18617f79",
+    "size_bytes": 486411,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "772x1220",
+    "alpha": false
+  },
+  {
+    "path": "references/archive/master-v1/auditoria_screenshots/audit_part_3.png",
+    "sha256": "82aba822834cea6374971489ac9ca50c8e908e2b4edfc7b62ba21c5587a69a31",
+    "size_bytes": 654763,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "772x1020",
+    "alpha": false
+  },
+  {
+    "path": "references/archive/master-v1/auditoria_screenshots/audit_part_4.png",
+    "sha256": "e22fed7c3d5a6e53f8f674d07f4579f36c5db307728183c8bbeec1e6b003cdd3",
+    "size_bytes": 194593,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "772x896",
+    "alpha": false
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astro_css_anterior/README.md",
+    "sha256": "56847bbf6c1eb2684ed4f974fe429daa4e56c25cbcc8a6c9263b8168af655b78",
+    "size_bytes": 2684,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astro_css_anterior/references/clube-condor-logo-source.png",
+    "sha256": "2f6d11bcb437b53c23fe3f052acdab5f7120b4d4af232b39f8e71058196ead4d",
+    "size_bytes": 26492,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "239x119",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astro_css_anterior/references/original-step-1.png",
+    "sha256": "f7507d266fb76857c1165a014245c75210f3e1913cdd53ed7fcfdf43bd0e6a6a",
+    "size_bytes": 277553,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "396x565",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astro_css_anterior/references/original-step-2.png",
+    "sha256": "2766f1f99bae7c6b145eed8357245d6e41e00cd8d3e9eab87fdac7a6127d8051",
+    "size_bytes": 295556,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "396x565",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astro_css_anterior/references/original-step-3.png",
+    "sha256": "9d714c96ac04291debc092e66083a53b7fbc09113f645ee2ddba8dcf7e98aad6",
+    "size_bytes": 304228,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "396x565",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astro_css_anterior/references/original-step-4.png",
+    "sha256": "7c2012b266073a08dda9e812f03890b86ebdf12a15753890ba1be26b2d50a342",
+    "size_bytes": 297732,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "396x565",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astro_css_anterior/src/assets/game-da-black/gdb-logo-original.png",
+    "sha256": "a2d2999c7ba599d00c3de633f2e28b2419bb3e3e703eee875a7a180e82b35135",
+    "size_bytes": 80875,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "196x206",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astro_css_anterior/src/assets/game-da-black/illustration-step-1.png",
+    "sha256": "4b6b6417740b1b171c62526f16b80d24beb2c306b75b281a38f02cb95e05330f",
+    "size_bytes": 103070,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "292x271",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astro_css_anterior/src/assets/game-da-black/illustration-step-2.png",
+    "sha256": "de0860c53269cea78249e1bbc6d824d7ce35d6bf25dfd622e9135ee56646b7c8",
+    "size_bytes": 124297,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "310x270",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astro_css_anterior/src/assets/game-da-black/illustration-step-3.png",
+    "sha256": "98894373fff2222ad6c664173656e9b0178f0b305898d307055052e14c633da8",
+    "size_bytes": 82406,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "298x166",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astro_css_anterior/src/assets/game-da-black/illustration-step-4.png",
+    "sha256": "67222a0b2cf8e400270516b41afda8411bb5a392352d6078197a02c1a17e8fff",
+    "size_bytes": 113087,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "286x269",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astro_css_anterior/src/features/game-da-black/components/GameStepCard.astro",
+    "sha256": "819bc0d10c9a89e195f03d39b3531abb2087d7cd6496014fcc6be50eb80b88cd",
+    "size_bytes": 804,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".astro",
+    "dimensions": ""
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astro_css_anterior/src/features/game-da-black/components/GameStepsSection.astro",
+    "sha256": "01e03194bc1ec14d186f4454512883cafb90aedc17ea43eced5c780ef5555283",
+    "size_bytes": 1182,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".astro",
+    "dimensions": ""
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astro_css_anterior/src/features/game-da-black/data/participationSteps.ts",
+    "sha256": "787c5b0a98b413824cb969c3477227f40474c51ab3efae35f0e9d758913f05a9",
+    "size_bytes": 1494,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".ts",
+    "dimensions": ""
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astro_css_anterior/src/features/game-da-black/styles/gameSteps.css",
+    "sha256": "4828b64723b8dc696dcb59ab4db52f55ef095726f3277b914ad368d06801555a",
+    "size_bytes": 4879,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".css",
+    "dimensions": ""
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astro_css_anterior/src/features/game-da-black/types.ts",
+    "sha256": "13d1246840c9e61479d3502716a1b495ef10961c367a182efa34b1ff8b8545e2",
+    "size_bytes": 360,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".ts",
+    "dimensions": ""
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astro_css_anterior/src/pages/game-da-black-preview.astro",
+    "sha256": "5ec2c04caff67afa0bd30e45fc89c6e11aa750e53718af5fab9e3b8a2eae4ccf",
+    "size_bytes": 479,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".astro",
+    "dimensions": ""
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astrotailwind_anterior/README.md",
+    "sha256": "569bc5517be39bdaffb5bc1bdc60a35020f0660d6d853a98036e35daa98bdbfd",
+    "size_bytes": 3372,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astrotailwind_anterior/references/clube-condor-logo-source.png",
+    "sha256": "2f6d11bcb437b53c23fe3f052acdab5f7120b4d4af232b39f8e71058196ead4d",
+    "size_bytes": 26492,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "239x119",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astrotailwind_anterior/references/original-step-1.png",
+    "sha256": "f7507d266fb76857c1165a014245c75210f3e1913cdd53ed7fcfdf43bd0e6a6a",
+    "size_bytes": 277553,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "396x565",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astrotailwind_anterior/references/original-step-2.png",
+    "sha256": "2766f1f99bae7c6b145eed8357245d6e41e00cd8d3e9eab87fdac7a6127d8051",
+    "size_bytes": 295556,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "396x565",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astrotailwind_anterior/references/original-step-3.png",
+    "sha256": "9d714c96ac04291debc092e66083a53b7fbc09113f645ee2ddba8dcf7e98aad6",
+    "size_bytes": 304228,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "396x565",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astrotailwind_anterior/references/original-step-4.png",
+    "sha256": "7c2012b266073a08dda9e812f03890b86ebdf12a15753890ba1be26b2d50a342",
+    "size_bytes": 297732,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "396x565",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astrotailwind_anterior/src/assets/game-da-black/gdb-logo-original.png",
+    "sha256": "a2d2999c7ba599d00c3de633f2e28b2419bb3e3e703eee875a7a180e82b35135",
+    "size_bytes": 80875,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "196x206",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astrotailwind_anterior/src/assets/game-da-black/illustration-step-1.png",
+    "sha256": "4b6b6417740b1b171c62526f16b80d24beb2c306b75b281a38f02cb95e05330f",
+    "size_bytes": 103070,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "292x271",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astrotailwind_anterior/src/assets/game-da-black/illustration-step-2.png",
+    "sha256": "de0860c53269cea78249e1bbc6d824d7ce35d6bf25dfd622e9135ee56646b7c8",
+    "size_bytes": 124297,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "310x270",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astrotailwind_anterior/src/assets/game-da-black/illustration-step-3.png",
+    "sha256": "98894373fff2222ad6c664173656e9b0178f0b305898d307055052e14c633da8",
+    "size_bytes": 82406,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "298x166",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astrotailwind_anterior/src/assets/game-da-black/illustration-step-4.png",
+    "sha256": "67222a0b2cf8e400270516b41afda8411bb5a392352d6078197a02c1a17e8fff",
+    "size_bytes": 113087,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "286x269",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astrotailwind_anterior/src/features/game-da-black/components/GameStepCard.astro",
+    "sha256": "fa8169671b9654c424bea7d1e6517b77d439c269daeb1b71a4699a0325f6b89c",
+    "size_bytes": 2189,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".astro",
+    "dimensions": ""
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astrotailwind_anterior/src/features/game-da-black/components/GameStepsSection.astro",
+    "sha256": "2ca6b4ad424492e49e73354b66e3436d3f029a1844180dcbd6c8bfc9f8b0c96c",
+    "size_bytes": 2413,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".astro",
+    "dimensions": ""
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astrotailwind_anterior/src/features/game-da-black/data/participationSteps.ts",
+    "sha256": "787c5b0a98b413824cb969c3477227f40474c51ab3efae35f0e9d758913f05a9",
+    "size_bytes": 1494,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".ts",
+    "dimensions": ""
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astrotailwind_anterior/src/features/game-da-black/types.ts",
+    "sha256": "13d1246840c9e61479d3502716a1b495ef10961c367a182efa34b1ff8b8545e2",
+    "size_bytes": 360,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".ts",
+    "dimensions": ""
+  },
+  {
+    "path": "references/archive/master-v1/codigo_astrotailwind_anterior/src/pages/game-da-black-preview.astro",
+    "sha256": "001b1d0fff6e55f7cf50253deedfad18ec4b8bc18e297bc1266e3c10d41d8e34",
+    "size_bytes": 469,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".astro",
+    "dimensions": ""
+  },
+  {
+    "path": "references/archive/master-v1/iteraciones_gdb/iteracion_01.png",
+    "sha256": "72bdb8c16e8678475b9dde35ede8414315d418213ff8f332687e4b57a5de8d57",
+    "size_bytes": 2004166,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "1920x819",
+    "alpha": false
+  },
+  {
+    "path": "references/archive/master-v1/iteraciones_gdb/iteracion_02.png",
+    "sha256": "5a63cd10c3dd4594e8dd9d993b2cc84ad1067ac55ac83e239d0226c5054ef92f",
+    "size_bytes": 1791267,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "1881x836",
+    "alpha": false
+  },
+  {
+    "path": "references/archive/master-v1/iteraciones_gdb/iteracion_03.png",
+    "sha256": "8b3c75141f17c1656a35bb930811a4e86462af30220f1aee2f56109289167b12",
+    "size_bytes": 2049418,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "1920x819",
+    "alpha": false
+  },
+  {
+    "path": "references/archive/master-v1/iteraciones_gdb/iteracion_04.png",
+    "sha256": "525edffc5c96936a528679a422d57c40c228cc26bf360a138cb15ddd057aac15",
+    "size_bytes": 1979868,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "1920x819",
+    "alpha": false
+  },
+  {
+    "path": "references/archive/master-v1/iteraciones_gdb/iteracion_05.png",
+    "sha256": "033883464560997ac54b34ced4a035a6c5bf0a7abe20576fb38b273f5cebeb0c",
+    "size_bytes": 2072202,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "1672x941",
+    "alpha": false
+  },
+  {
+    "path": "references/archive/master-v1/iteraciones_gdb/iteracion_06.png",
+    "sha256": "4c6352fe4d47a61a44c99abcf888bb7e4bc24bf944030cb5ee035af0f99231e5",
+    "size_bytes": 2016866,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "1672x941",
+    "alpha": false
+  },
+  {
+    "path": "references/archive/master-v1/iteraciones_gdb/iteracion_07.png",
+    "sha256": "7632eca65ea318906d89d36769bf5b8d6471f8ea8336e82bd67b1f3b1a8765e9",
+    "size_bytes": 1789831,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "2020x779",
+    "alpha": false
+  },
+  {
+    "path": "references/archive/master-v1/iteraciones_gdb/iteracion_08.png",
+    "sha256": "4261a0b5ceffb942aeb706ccd7811f292d2a7d33fbd0c4140d5513245ee2f702",
+    "size_bytes": 1890710,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "1997x787",
+    "alpha": false
+  },
+  {
+    "path": "references/archive/master-v1/iteraciones_gdb/iteracion_09.png",
+    "sha256": "061157c08e901df73ed4e30012fd32f562caa972ce6006bd38a8c5ad076579e1",
+    "size_bytes": 1949640,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "1997x788",
+    "alpha": false
+  },
+  {
+    "path": "references/archive/master-v1/iteraciones_gdb/iteracion_10.png",
+    "sha256": "22fd07c52ca06a1ef6047b530b49b48a0f095bd1e623940a861a7d8aafd3d83d",
+    "size_bytes": 1907903,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "1997x787",
+    "alpha": false
+  },
+  {
+    "path": "references/archive/master-v1/iteraciones_gdb/iteracion_11.png",
+    "sha256": "525edffc5c96936a528679a422d57c40c228cc26bf360a138cb15ddd057aac15",
+    "size_bytes": 1979868,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "1920x819",
+    "alpha": false
+  },
+  {
+    "path": "references/archive/master-v1/iteraciones_gdb/iteracion_12.png",
+    "sha256": "a0c512b93bb4e7302832bf78d55e1aecc55822d22877769dcaac7b5c154a064f",
+    "size_bytes": 1890451,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "1672x941",
+    "alpha": false
+  },
+  {
+    "path": "references/archive/master-v1/iteraciones_gdb/iteracion_13.png",
+    "sha256": "dd00ef94971d8df739b5d2df62c308d36c4573c91aeb254a7de53cb9c77ed342",
+    "size_bytes": 1815358,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "1672x941",
+    "alpha": false
+  },
+  {
+    "path": "references/archive/master-v1/iteraciones_gdb/iteracion_14.png",
+    "sha256": "23979128fbaa77aa67e9048fed4e7b1e0a13f67253fa32c451bf38c04ef196e7",
+    "size_bytes": 1779586,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "1997x787",
+    "alpha": false
+  },
+  {
+    "path": "references/archive/master-v1/iteraciones_gdb/iteracion_15.png",
+    "sha256": "329c993adddc27962bda4454e5ecc6fc59b0c571f5cb6b16f33a1c044bf340b3",
+    "size_bytes": 1782627,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "1997x787",
+    "alpha": false
+  },
+  {
+    "path": "references/archive/master-v1/iteraciones_gdb/iteracion_16.png",
+    "sha256": "457e1183f4b0069ed4fec53f43bea43922fec9d0ce29078fbd07ef0c40c3a38b",
+    "size_bytes": 1772076,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "1997x787",
+    "alpha": false
+  },
+  {
+    "path": "references/archive/master-v1/iteraciones_gdb/iteracion_17.png",
+    "sha256": "21fd845a446862c32a7842fe8ee31ac7b8957e8c249c9e7996df2b7fd39f8b34",
+    "size_bytes": 2409796,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "2172x724",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/iteraciones_gdb/iteracion_18.png",
+    "sha256": "21fd845a446862c32a7842fe8ee31ac7b8957e8c249c9e7996df2b7fd39f8b34",
+    "size_bytes": 2409796,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "2172x724",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/iteraciones_gdb/iteracion_19.png",
+    "sha256": "ffff35853e792c716f44b68a83c07e3070b2182c07251bb53a2a4c2d99411c45",
+    "size_bytes": 2083829,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "1254x1254",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/iteraciones_gdb/iteracion_20.png",
+    "sha256": "267fe18250f0c3dc15c5f6a234da0a3704c9aab80dd12cfc2a1727f9c2b4a087",
+    "size_bytes": 1760008,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "1254x1254",
+    "alpha": true
+  },
+  {
+    "path": "references/archive/master-v1/mocks_pagina_completa/refinamiento_general_no_final.png",
+    "sha256": "c6399e03387fca5a59b66f4aea5bcd10db62f59c8c2c039d62f8ac36727bbd13",
+    "size_bytes": 1879369,
+    "role": "archive",
+    "status": "historical",
+    "extension": ".png",
+    "dimensions": "724x2172",
+    "alpha": false
+  },
+  {
+    "path": "references/figma/README.md",
+    "sha256": "d0cdad6f6c94dede932f139b699f29b3e3fc61a4b5675e569d1750398f156e4d",
+    "size_bytes": 93,
+    "role": "new_placeholder",
+    "status": "new",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "references/screenshots/landing-local-fireshoot-019.png",
+    "sha256": "253ade5f41f522f0970882f272a9aade796e3841b1f3cb0a9705f689cf7e2310",
+    "size_bytes": 805871,
+    "role": "reference",
+    "status": "reference",
+    "extension": ".png",
+    "dimensions": "386x2048",
+    "alpha": true
+  },
+  {
+    "path": "references/screenshots/landing-local-fireshoot-020.png",
+    "sha256": "f238e13b30b400c53506278ab3fde73e6eaa60854d727c860ae20489e3cdc968",
+    "size_bytes": 4701303,
+    "role": "screenshot_reference",
+    "status": "user_supplied_reference_unmodified",
+    "extension": ".png",
+    "dimensions": "1366x6952",
+    "alpha": false
+  },
+  {
+    "path": "references/screenshots/landing-observaciones-marcadas.png",
+    "sha256": "41d0862440707de99f0c6153b1eee63dfebe0321b0f0c12f56f1cbcf88328151",
+    "size_bytes": 2070868,
+    "role": "reference",
+    "status": "reference",
+    "extension": ".png",
+    "dimensions": "724x2172",
+    "alpha": true
+  },
+  {
+    "path": "references/user-supplied/branding/logo-clube-condor-recorte-chat.png",
+    "sha256": "5b0752205f6905948d6c4e1838d76b4f3f4c5bb1df9b07b66024bf245e3708b2",
+    "size_bytes": 27116,
+    "role": "original_user_reference",
+    "status": "user_chat_reference_unmodified",
+    "extension": ".png",
+    "dimensions": "264x135",
+    "alpha": true
+  },
+  {
+    "path": "references/user-supplied/branding/logo-gdb-recorte-chat.png",
+    "sha256": "514362c58b8276549158550c2aa99b0a5127ee2bf350eae3175f626312bb0658",
+    "size_bytes": 187574,
+    "role": "original_user_reference",
+    "status": "user_chat_reference_unmodified",
+    "extension": ".png",
+    "dimensions": "312x324",
+    "alpha": true
+  },
+  {
+    "path": "references/user-supplied/branding/logo-gdb-segunda-referencia-chat.png",
+    "sha256": "33695600aac243c364a8a489b21abe0365f71891b50a972ae7192c649120046d",
+    "size_bytes": 188764,
+    "role": "original_user_reference",
+    "status": "user_chat_reference_unmodified",
+    "extension": ".png",
+    "dimensions": "302x333",
+    "alpha": true
+  },
+  {
+    "path": "references/user-supplied/condor-premia/passos-cuatro-composicion-chat.png",
+    "sha256": "5836d01eb1ddea0aef3b7db6dc8daba502323118bb8333bd52403d0111a53f77",
+    "size_bytes": 231914,
+    "role": "original_user_reference",
+    "status": "user_chat_reference_unmodified",
+    "extension": ".png",
+    "dimensions": "1147x398",
+    "alpha": true
+  },
+  {
+    "path": "references/user-supplied/condor-premia/premios-composicion-chat.png",
+    "sha256": "c0f9fd64d8f3e69f75e8bab4207e3992e911d0b29674a1cc0175096396d2b95f",
+    "size_bytes": 1272075,
+    "role": "original_user_reference",
+    "status": "user_chat_reference_unmodified",
+    "extension": ".png",
+    "dimensions": "1144x853",
+    "alpha": true
+  },
+  {
+    "path": "references/user-supplied/game-da-black/ilustracion-01-presentadora-playstation.png",
+    "sha256": "bb2e4c246dfc274568b3fe2e24e9a758bbb029dd1a1b38fb54bf0502cda90edb",
+    "size_bytes": 67696,
+    "role": "original_user_reference",
+    "status": "user_chat_reference_unmodified",
+    "extension": ".png",
+    "dimensions": "179x188",
+    "alpha": true
+  },
+  {
+    "path": "references/user-supplied/game-da-black/ilustracion-02-presentadora-supermercado.png",
+    "sha256": "7a276c27ace2da1e9840dda6680b5eeb62034de93cb4d71d54ec676b230dad70",
+    "size_bytes": 85753,
+    "role": "original_user_reference",
+    "status": "user_chat_reference_unmodified",
+    "extension": ".png",
+    "dimensions": "238x149",
+    "alpha": true
+  },
+  {
+    "path": "references/user-supplied/game-da-black/ilustracion-03-presentadora-tienda.png",
+    "sha256": "409cce0a3ce3e1c75262137744df0db401c0c2d95195540d6b6dc6c6eb2191aa",
+    "size_bytes": 45054,
+    "role": "original_user_reference",
+    "status": "user_chat_reference_unmodified",
+    "extension": ".png",
+    "dimensions": "187x104",
+    "alpha": true
+  },
+  {
+    "path": "references/user-supplied/game-da-black/ilustracion-04-presentadora-bolsas.png",
+    "sha256": "465bf1d00c4075044e0878f61842cff8e3349ef995a69ddb38740dfe75d1a200",
+    "size_bytes": 41821,
+    "role": "original_user_reference",
+    "status": "user_chat_reference_unmodified",
+    "extension": ".png",
+    "dimensions": "194x122",
+    "alpha": true
+  },
+  {
+    "path": "references/user-supplied/game-da-black/key-visual-recorte-chat.png",
+    "sha256": "278711b7b9c8c5603a2177e07376d5a759aa32569025f56dfda957bf79d0612e",
+    "size_bytes": 765946,
+    "role": "original_user_reference",
+    "status": "user_chat_reference_unmodified",
+    "extension": ".png",
+    "dimensions": "907x528",
+    "alpha": true
+  },
+  {
+    "path": "references/user-supplied/game-da-black/passos-quatro-captura-alternativa.png",
+    "sha256": "b07e133212c827e3964a08a1b984c34fd6a17e853ada603d0a994ed353d46a9a",
+    "size_bytes": 33508,
+    "role": "original_user_reference",
+    "status": "user_chat_reference_unmodified",
+    "extension": ".png",
+    "dimensions": "782x228",
+    "alpha": true
+  },
+  {
+    "path": "references/user-supplied/game-da-black/passos-quatro-generacion-referencia.png",
+    "sha256": "0a2ebcbaca66751c408bd7593364f9999a5eb56e36a4b0c98dfefd40f0a70f7e",
+    "size_bytes": 209269,
+    "role": "original_user_reference",
+    "status": "user_chat_reference_unmodified",
+    "extension": ".png",
+    "dimensions": "537x212",
+    "alpha": true
+  },
+  {
+    "path": "references/user-supplied/game-da-black/passos-quatro-miniatura-chat.png",
+    "sha256": "c1917464760479e79387c80c44e9d2dec10f8295509eca33795728a82116db96",
+    "size_bytes": 5612,
+    "role": "original_user_reference",
+    "status": "user_chat_reference_unmodified",
+    "extension": ".png",
+    "dimensions": "315x81",
+    "alpha": true
+  },
+  {
+    "path": "references/user-supplied/game-da-black/passos-quatro-textos-chat.png",
+    "sha256": "c70211e264b69bb73ef8c541a69d80b66531cb24863e919fcd74d706a9d752fe",
+    "size_bytes": 57003,
+    "role": "original_user_reference",
+    "status": "user_chat_reference_unmodified",
+    "extension": ".png",
+    "dimensions": "1168x340",
+    "alpha": true
+  },
+  {
+    "path": "src/assets/game-da-black/gdb-logo-original.png",
+    "sha256": "a2d2999c7ba599d00c3de633f2e28b2419bb3e3e703eee875a7a180e82b35135",
+    "size_bytes": 80875,
+    "role": "code_reference",
+    "status": "implementation_reference_not_integrated",
+    "extension": ".png",
+    "dimensions": "196x206",
+    "alpha": true
+  },
+  {
+    "path": "src/assets/game-da-black/illustration-step-1.png",
+    "sha256": "4b6b6417740b1b171c62526f16b80d24beb2c306b75b281a38f02cb95e05330f",
+    "size_bytes": 103070,
+    "role": "code_reference",
+    "status": "implementation_reference_not_integrated",
+    "extension": ".png",
+    "dimensions": "292x271",
+    "alpha": true
+  },
+  {
+    "path": "src/assets/game-da-black/illustration-step-2.png",
+    "sha256": "de0860c53269cea78249e1bbc6d824d7ce35d6bf25dfd622e9135ee56646b7c8",
+    "size_bytes": 124297,
+    "role": "code_reference",
+    "status": "implementation_reference_not_integrated",
+    "extension": ".png",
+    "dimensions": "310x270",
+    "alpha": true
+  },
+  {
+    "path": "src/assets/game-da-black/illustration-step-3.png",
+    "sha256": "98894373fff2222ad6c664173656e9b0178f0b305898d307055052e14c633da8",
+    "size_bytes": 82406,
+    "role": "code_reference",
+    "status": "implementation_reference_not_integrated",
+    "extension": ".png",
+    "dimensions": "298x166",
+    "alpha": true
+  },
+  {
+    "path": "src/assets/game-da-black/illustration-step-4.png",
+    "sha256": "67222a0b2cf8e400270516b41afda8411bb5a392352d6078197a02c1a17e8fff",
+    "size_bytes": 113087,
+    "role": "code_reference",
+    "status": "implementation_reference_not_integrated",
+    "extension": ".png",
+    "dimensions": "286x269",
+    "alpha": true
+  },
+  {
+    "path": "src/components/ui/README.md",
+    "sha256": "d0cdad6f6c94dede932f139b699f29b3e3fc61a4b5675e569d1750398f156e4d",
+    "size_bytes": 93,
+    "role": "new_placeholder",
+    "status": "new",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "src/features/black-friday-bottom/components/CampaignActions.astro",
+    "sha256": "5a276798821b3bb27c656e0729d42df8f3ee8658b9bb5ba4fdc18f61f1ea02af",
+    "size_bytes": 2335,
+    "role": "code_reference",
+    "status": "implementation_reference_not_integrated",
+    "extension": ".astro",
+    "dimensions": ""
+  },
+  {
+    "path": "src/features/black-friday-bottom/components/ContactCard.astro",
+    "sha256": "d94c5475bfbd154549bc212c2b581881fc5bd824023ae716600847ac07f77df2",
+    "size_bytes": 1839,
+    "role": "code_reference",
+    "status": "implementation_reference_not_integrated",
+    "extension": ".astro",
+    "dimensions": ""
+  },
+  {
+    "path": "src/features/black-friday-bottom/components/ContactSection.astro",
+    "sha256": "ef335c176c13b73c6d035d982e4e52042cc4a93304ae8f46575982ca427a0515",
+    "size_bytes": 657,
+    "role": "code_reference",
+    "status": "implementation_reference_not_integrated",
+    "extension": ".astro",
+    "dimensions": ""
+  },
+  {
+    "path": "src/features/black-friday-bottom/components/FaqAccordion.astro",
+    "sha256": "ae1fc97eb8fbf7fab1575ecaaadf44ae97abf85cbdd4705df3ae5e18bca30795",
+    "size_bytes": 1702,
+    "role": "code_reference",
+    "status": "implementation_reference_not_integrated",
+    "extension": ".astro",
+    "dimensions": ""
+  },
+  {
+    "path": "src/features/black-friday-bottom/components/PostGameBottom.astro",
+    "sha256": "b8ccab2e28f9cd44d81464b0d69c1125083bde91739311c5c0da8e0bd6f79913",
+    "size_bytes": 1099,
+    "role": "code_reference",
+    "status": "implementation_reference_not_integrated",
+    "extension": ".astro",
+    "dimensions": ""
+  },
+  {
+    "path": "src/features/black-friday-bottom/data/contacts.ts",
+    "sha256": "4025b6174022f7e7bfe24b4799ae0d25925d8b2b1a877f8a221cb8b7aa10d7aa",
+    "size_bytes": 773,
+    "role": "code_reference",
+    "status": "implementation_reference_not_integrated",
+    "extension": ".ts",
+    "dimensions": ""
+  },
+  {
+    "path": "src/features/black-friday-bottom/data/faqs-preview.ts",
+    "sha256": "224a6c501945278cdb8e1ec86d91b7bb9bfa0a98ff16470a200a6052faf53efe",
+    "size_bytes": 869,
+    "role": "code_reference",
+    "status": "implementation_reference_not_integrated",
+    "extension": ".ts",
+    "dimensions": ""
+  },
+  {
+    "path": "src/features/black-friday-bottom/types.ts",
+    "sha256": "4bd98dda642654b2df7146d91d1121e018302fb60a2c5aa6286067cbfa5d0f8c",
+    "size_bytes": 301,
+    "role": "code_reference",
+    "status": "implementation_reference_not_integrated",
+    "extension": ".ts",
+    "dimensions": ""
+  },
+  {
+    "path": "src/features/black-friday/README.md",
+    "sha256": "d0cdad6f6c94dede932f139b699f29b3e3fc61a4b5675e569d1750398f156e4d",
+    "size_bytes": 93,
+    "role": "new_placeholder",
+    "status": "new",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "src/features/condor-premia/README.md",
+    "sha256": "d0cdad6f6c94dede932f139b699f29b3e3fc61a4b5675e569d1750398f156e4d",
+    "size_bytes": 93,
+    "role": "new_placeholder",
+    "status": "new",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "src/features/game-da-black/components/GameStepCard.astro",
+    "sha256": "fa8169671b9654c424bea7d1e6517b77d439c269daeb1b71a4699a0325f6b89c",
+    "size_bytes": 2189,
+    "role": "code_reference",
+    "status": "implementation_reference_not_integrated",
+    "extension": ".astro",
+    "dimensions": ""
+  },
+  {
+    "path": "src/features/game-da-black/components/GameStepsSection.astro",
+    "sha256": "2ca6b4ad424492e49e73354b66e3436d3f029a1844180dcbd6c8bfc9f8b0c96c",
+    "size_bytes": 2413,
+    "role": "code_reference",
+    "status": "implementation_reference_not_integrated",
+    "extension": ".astro",
+    "dimensions": ""
+  },
+  {
+    "path": "src/features/game-da-black/data/participationSteps.ts",
+    "sha256": "787c5b0a98b413824cb969c3477227f40474c51ab3efae35f0e9d758913f05a9",
+    "size_bytes": 1494,
+    "role": "code_reference",
+    "status": "implementation_reference_not_integrated",
+    "extension": ".ts",
+    "dimensions": ""
+  },
+  {
+    "path": "src/features/game-da-black/types.ts",
+    "sha256": "13d1246840c9e61479d3502716a1b495ef10961c367a182efa34b1ff8b8545e2",
+    "size_bytes": 360,
+    "role": "code_reference",
+    "status": "implementation_reference_not_integrated",
+    "extension": ".ts",
+    "dimensions": ""
+  },
+  {
+    "path": "src/layouts/README.md",
+    "sha256": "d0cdad6f6c94dede932f139b699f29b3e3fc61a4b5675e569d1750398f156e4d",
+    "size_bytes": 93,
+    "role": "new_placeholder",
+    "status": "new",
+    "extension": ".md",
+    "dimensions": ""
+  },
+  {
+    "path": "src/pages/black-friday-bottom-preview.astro",
+    "sha256": "8b76b7baa8d51b80066cb62880e484a635b1a0240d524adff585f4e956055a44",
+    "size_bytes": 1611,
+    "role": "code_reference",
+    "status": "implementation_reference_not_integrated",
+    "extension": ".astro",
+    "dimensions": ""
+  },
+  {
+    "path": "src/styles/README.md",
+    "sha256": "d0cdad6f6c94dede932f139b699f29b3e3fc61a4b5675e569d1750398f156e4d",
+    "size_bytes": 93,
+    "role": "new_placeholder",
+    "status": "new",
+    "extension": ".md",
+    "dimensions": ""
+  }
+]

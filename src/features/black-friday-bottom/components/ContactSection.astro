@@ -1,0 +1,14 @@
+---
+import type { ContactInfo } from '../types';
+import ContactCard from './ContactCard.astro';
+interface Props { contacts: readonly ContactInfo[]; id?: string; }
+const { contacts, id = 'canais-de-comunicacao' } = Astro.props;
+---
+<section id={id} aria-labelledby={`${id}-titulo`} class="mx-auto max-w-[920px] scroll-mt-24">
+  <h2 id={`${id}-titulo`} class="mb-7 text-center text-balance text-[clamp(1.65rem,2.7vw,2.2rem)] font-extrabold leading-tight text-white sm:mb-8">
+    Nossos canais de comunicação
+  </h2>
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+    {contacts.map((contact) => <ContactCard contact={contact} />)}
+  </div>
+</section>

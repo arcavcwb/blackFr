@@ -1,0 +1,80 @@
+[
+  {
+    "file": "capturas/desktop-a-1440.jpg",
+    "viewport_css": [
+      1440,
+      1100
+    ],
+    "jpeg_size": [
+      1425,
+      1089
+    ],
+    "sha256": "710dd580bc8711832efd47a9834fbb0eab560148764c2873813f4f441387f1bc",
+    "bytes": 171032
+  },
+  {
+    "file": "capturas/desktop-b-1440.jpg",
+    "viewport_css": [
+      1440,
+      1100
+    ],
+    "jpeg_size": [
+      1425,
+      1089
+    ],
+    "sha256": "87b67132b32371b74c7bbadbb20fe2d31c40ded9fa0ebfeb1220d48a9694d264",
+    "bytes": 171795
+  },
+  {
+    "file": "capturas/desktop-c-1440.jpg",
+    "viewport_css": [
+      1440,
+      1100
+    ],
+    "jpeg_size": [
+      1425,
+      1089
+    ],
+    "sha256": "d2ec9a458a6c1d1e94e95b6f8b1e1af461f29c38bf6ca75848e76f7b9642d4fa",
+    "bytes": 159499
+  },
+  {
+    "file": "capturas/mobile-a-390.jpg",
+    "viewport_css": [
+      390,
+      1100
+    ],
+    "jpeg_size": [
+      375,
+      1058
+    ],
+    "sha256": "0efbe01c9f522f83d8ce4877078543b37d3116fed8024d690e51a92fddccda57",
+    "bytes": 63963
+  },
+  {
+    "file": "capturas/mobile-b-390.jpg",
+    "viewport_css": [
+      390,
+      1100
+    ],
+    "jpeg_size": [
+      375,
+      1058
+    ],
+    "sha256": "7d965c681e4f197796db1dc987d4ca39aa3e8096a6d4bc9782994072a9faa38b",
+    "bytes": 63934
+  },
+  {
+    "file": "capturas/mobile-c-390.jpg",
+    "viewport_css": [
+      390,
+      1100
+    ],
+    "jpeg_size": [
+      375,
+      1058
+    ],
+    "sha256": "b9405aff3e7eb7752af8307e34c734ce5db43e02ce301bd75d2ca837d193487b",
+    "bytes": 61572
+  }
+]

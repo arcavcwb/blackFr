@@ -1,0 +1,57 @@
+{
+  "status": "proposal-not-approved",
+  "revision": "55a35e7d8e7daf99",
+  "canonicalSha256": "1c8a6b09670a4bb4b7ec29a3a1cc7696b8c7e7a972e734ff03da407455e3d3cb",
+  "baselineFiles": {
+    "prototypes/ds-v2-comparacion/proveniencia.json": "6161b58fc42bf524f748a8fa7a59c634b26847d1e0d62a6e96c0b617d752819a",
+    "prototypes/ds-v2-comparacion/prototipo.html": "ec50f66959c05dbee18138297999a5b18e1ec13d76990e5b3f249be4e7f7017b",
+    "prototypes/ds-v2-comparacion/evidencia-paridad.json": "2cb4ad442f0e9d7d3c21cb4739581b7c0233af622310ea1dfca2d9eccce43b56",
+    "prototypes/ds-v2-comparacion/auditoria-paridad.md": "334133b4b3aa1746dacf65e02fbe0c44aaf7c67eb4ba8510ccf6c2d7f662b3b8",
+    "prototypes/ds-v2-comparacion/index.html": "4a66c6fe4ca934bdb92c0e5215a03bf4adcd2abcbb00dcc4bb6188b464400a79",
+    "prototypes/ds-v2-comparacion/muestra.js": "5f755e50a38f78b13a38cd0250f0e5ae611c3bb1677199b0a057e02fd10a8793",
+    "prototypes/ds-v2-comparacion/README.md": "adfdaf5c92f8ad528fba40c23f8a150323c2c7786814d18151490c9ed4322a7d",
+    "prototypes/ds-v2-comparacion/controlador.js": "f7f4d76209c6a25137059057f6603c46ed6bf41636476f85c0ac865db6e783d7",
+    "prototypes/ds-v2-comparacion/validacion.json": "0fec084977f031aa9de8f250ee6e42ed47712f1b4270f367a4aa2d5037351e84",
+    "prototypes/ds-v2-comparacion/generar.py": "bd932de347dd672a9375d5598834603653bc8b766e430edb7907ca729650a4ce",
+    "prototypes/ds-v2-comparacion/comparativa.md": "5aa22384ac7bc8ddc4bbdd46757e29c064661f4123a1c03f16adb611eb286946"
+  },
+  "specC": {
+    "status": "proposal-not-approved",
+    "maxWidth": 1400,
+    "bodyFontPx": 15,
+    "bodyLineHeight": 1.4,
+    "baselineStylesheetSha256": "2fa878acb271c81ea70e98347f1118c46d31a4bd7284090349c4d283d93e2dbb",
+    "cssSha256": "17d4d01a852bc1cf47f573ff22e30aca8513e9cb6ac0f53f64ef1db567b5b46a",
+    "allowedComputedChanges": {
+      ".step": [
+        "padding",
+        "borderWidth",
+        "borderRadius",
+        "boxShadow"
+      ],
+      ".step-number": [
+        "fontSize",
+        "borderRadius",
+        "boxShadow"
+      ],
+      ".step h2": [
+        "fontSize",
+        "fontWeight",
+        "lineHeight",
+        "padding",
+        "letterSpacing"
+      ],
+      ".step-copy": [
+        "fontSize",
+        "lineHeight"
+      ],
+      ".bonus": [
+        "fontSize",
+        "fontWeight",
+        "lineHeight",
+        "padding",
+        "borderWidth"
+      ]
+    }
+  }
+}

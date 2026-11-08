@@ -1,0 +1,30 @@
+{
+  "status": "experimental-not-approved",
+  "prototype_revision": "f749d513ec581ca7",
+  "canonical_source": "content/landing-content.json",
+  "canonical_sha256": "1c8a6b09670a4bb4b7ec29a3a1cc7696b8c7e7a972e734ff03da407455e3d3cb",
+  "assets_sha256": {
+    "src/assets/game-da-black/illustration-step-1.png": "4b6b6417740b1b171c62526f16b80d24beb2c306b75b281a38f02cb95e05330f",
+    "src/assets/game-da-black/illustration-step-2.png": "de0860c53269cea78249e1bbc6d824d7ce35d6bf25dfd622e9135ee56646b7c8",
+    "src/assets/game-da-black/illustration-step-3.png": "98894373fff2222ad6c664173656e9b0178f0b305898d307055052e14c633da8",
+    "src/assets/game-da-black/illustration-step-4.png": "67222a0b2cf8e400270516b41afda8411bb5a392352d6078197a02c1a17e8fff",
+    "assets/generated/game-da-black/cards-aprovados/card-01-comece-pelo-app.png": "f7507d266fb76857c1165a014245c75210f3e1913cdd53ed7fcfdf43bd0e6a6a",
+    "assets/generated/game-da-black/cards-aprovados/card-02-ative-antes-de-comprar.png": "2766f1f99bae7c6b145eed8357245d6e41e00cd8d3e9eab87fdac7a6127d8051",
+    "assets/generated/game-da-black/cards-aprovados/card-03-compre-e-ganhe-numeros.png": "9d714c96ac04291debc092e66083a53b7fbc09113f645ee2ddba8dcf7e98aad6",
+    "assets/generated/game-da-black/cards-aprovados/card-04-confira-seus-numeros.png": "7c2012b266073a08dda9e812f03890b86ebdf12a15753890ba1be26b2d50a342",
+    "src/assets/game-da-black/gdb-logo-original.png": "a2d2999c7ba599d00c3de633f2e28b2419bb3e3e703eee875a7a180e82b35135",
+    "assets/originals/branding/logo-condor-com-sombra.png": "8d5c8fa4168b2ac1187c9d408661c3ea43ec4d1cebce4c4fc131881fcd3469ec",
+    "references/approved/game-da-black/passos-quatro-composicion-aprobada.png": "1865a270a6a6bdc411c4980f6986b4c5b0e590552c4ef067d63e4476419400b5"
+  },
+  "variant_maxima": [
+    1280,
+    1480
+  ],
+  "required_viewports": [
+    390,
+    768,
+    1280,
+    1440
+  ],
+  "supplementary_viewport": 1600
+}

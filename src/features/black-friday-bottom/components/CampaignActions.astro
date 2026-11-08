@@ -1,0 +1,40 @@
+---
+/**
+ * Presentation-only container. Slots intentionally preserve the existing
+ * <a> / <button> elements and their original href / event behavior.
+ * No invented regulation URLs and no client JS.
+ */
+interface Props { class?: string; }
+const { class: className = '' } = Astro.props;
+const baseAction = '[&>a]:inline-flex [&>button]:inline-flex [&>span]:inline-flex [&>*]:min-h-12 [&>*]:w-full [&>*]:items-center [&>*]:justify-center [&>*]:gap-2 [&>*]:px-5 [&>*]:py-3 [&>*]:text-center [&>*]:text-sm [&>*]:font-extrabold [&>*]:leading-snug [&>*]:transition-colors [&>*]:duration-200 [&>a:focus-visible]:outline [&>a:focus-visible]:outline-[3px] [&>a:focus-visible]:outline-offset-4 [&>a:focus-visible]:outline-[#FFE76A] [&>button:focus-visible]:outline [&>button:focus-visible]:outline-[3px] [&>button:focus-visible]:outline-offset-4 [&>button:focus-visible]:outline-[#FFE76A]';
+---
+<div class:list={['mx-auto w-full max-w-[760px]', className]} aria-label="Acesse o app e consulte as informações da promoção">
+  <div class:list={[
+    baseAction,
+    'mx-auto max-w-[580px] [&>*]:rounded-full [&>*]:bg-[#FFE86D] [&>*]:text-[#071A42] [&>a:hover]:bg-[#FFF39D] [&>button:hover]:bg-[#FFF39D]',
+  ]}>
+    <slot name="primary" />
+  </div>
+
+  <div class="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+    <div class:list={[
+      baseAction,
+      '[&>*]:h-full [&>*]:rounded-xl [&>*]:border [&>*]:border-[#24599A] [&>*]:bg-[#081B38] [&>*]:text-[#E8F1FF] [&>a:hover]:border-[#6DB7FD] [&>a:hover]:bg-[#0C2C58] [&>button:hover]:border-[#6DB7FD] [&>button:hover]:bg-[#0C2C58]',
+    ]}>
+      <slot name="regulation-game" />
+    </div>
+    <div class:list={[
+      baseAction,
+      '[&>*]:h-full [&>*]:rounded-xl [&>*]:border [&>*]:border-[#24599A] [&>*]:bg-[#081B38] [&>*]:text-[#E8F1FF] [&>a:hover]:border-[#6DB7FD] [&>a:hover]:bg-[#0C2C58] [&>button:hover]:border-[#6DB7FD] [&>button:hover]:bg-[#0C2C58]',
+    ]}>
+      <slot name="regulation-black" />
+    </div>
+  </div>
+
+  <div class:list={[
+    baseAction,
+    'mx-auto mt-4 max-w-[620px] [&>*]:min-h-10 [&>*]:rounded-lg [&>*]:bg-transparent [&>*]:px-3 [&>*]:font-semibold [&>*]:text-[#82CFFF] [&>a:hover]:text-white [&>button:hover]:text-white [&>span]:text-[#82CFFF] [&>a]:underline [&>button]:underline [&>*]:underline-offset-4',
+  ]}>
+    <slot name="offers" />
+  </div>
+</div>

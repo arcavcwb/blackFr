@@ -1,0 +1,41 @@
+---
+import { Image } from 'astro:assets';
+import GameStepCard from './GameStepCard.astro';
+import { participationSteps } from '../data/participationSteps';
+import gdbLogo from '../../../assets/game-da-black/gdb-logo-original.png';
+import '../styles/gameSteps.css';
+
+interface Props {
+  id?: string;
+  class?: string;
+}
+
+const { id = 'game-da-black-como-participar', class: className = '' } = Astro.props;
+---
+
+<section id={id} class:list={['gdb', className]} aria-labelledby={`${id}-title`}>
+  <div class="gdb__container">
+    <header class="gdb__header">
+      <Image
+        src={gdbLogo}
+        alt="GDB — Game da Black, Condor"
+        class="gdb__brand"
+        width={146}
+        loading="lazy"
+      />
+      <p class="gdb__eyebrow">COMO PARTICIPAR</p>
+      <h2 class="gdb__headline" id={`${id}-title`}>
+        É muito fácil participar do <span>Game da Black</span>
+      </h2>
+      <p class="gdb__intro">Siga os quatro passos e participe da promoção.</p>
+    </header>
+
+    <ol class="gdb__grid">
+      {participationSteps.map((step) => (
+        <li class="gdb__item">
+          <GameStepCard step={step} />
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>

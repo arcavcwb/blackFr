@@ -1,0 +1,25 @@
+---
+import type { FaqItem } from '../types';
+interface Props { items: readonly FaqItem[]; id?: string; }
+const { items, id = 'perguntas-frequentes' } = Astro.props;
+---
+<section id={id} aria-labelledby={`${id}-titulo`} class="mx-auto w-full max-w-[768px] scroll-mt-24">
+  <header class="mb-7 text-center sm:mb-8">
+    <h2 id={`${id}-titulo`} class="text-balance text-[clamp(1.7rem,3vw,2.3rem)] font-extrabold leading-tight text-white">
+      Perguntas frequentes
+    </h2>
+  </header>
+  <div class="grid gap-3 sm:gap-4">
+    {items.map((item) => (
+      <details class="group min-w-0 overflow-hidden rounded-xl border border-[#244771] bg-[#0A1E3B] open:border-[#418BD6] open:bg-[#102847]">
+        <summary class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-left text-base font-semibold leading-snug text-white outline-none transition-colors hover:bg-[#153258] focus-visible:bg-[#153258] focus-visible:outline focus-visible:outline-[3px] focus-visible:-outline-offset-[3px] focus-visible:outline-[#FFE76A] sm:px-6 [&::-webkit-details-marker]:hidden">
+          <span>{item.question}</span>
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-[#88C9FF] transition-transform duration-200 group-open:rotate-180 motion-reduce:transition-none"><path d="m6 9 6 6 6-6" /></svg>
+        </summary>
+        <div class="border-t border-[#274469] px-5 pb-5 pt-4 text-[0.975rem] leading-7 text-[#CFDEEF] sm:px-6">
+          <p>{item.answer}</p>
+        </div>
+      </details>
+    ))}
+  </div>
+</section>

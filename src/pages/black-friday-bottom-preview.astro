@@ -1,0 +1,23 @@
+---
+// OPTIONAL preview route, remove from production routing once integrated.
+// This page requires Tailwind already configured in the containing Astro project.
+import GameStepsSection from '../features/game-da-black/components/GameStepsSection.astro';
+import PostGameBottom from '../features/black-friday-bottom/components/PostGameBottom.astro';
+import { faqPreviewItems } from '../features/black-friday-bottom/data/faqs-preview';
+---
+<html lang="pt-BR">
+  <head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>Black Friday Condor — preview da seção inferior</title></head>
+  <body class="m-0 bg-[#08090D]">
+    <main>
+      <!-- Keep the existing GDB hero image/section in the real project. This route focuses on the approved steps and lower area. -->
+      <GameStepsSection />
+      <PostGameBottom faqs={faqPreviewItems}>
+        <a slot="primary" href="https://clubecondor.com/">BAIXE O APP CLUBE CONDOR E ACESSE O GAME DA BLACK <span aria-hidden="true">↗</span></a>
+        <!-- The live source exposed no verified URLs for these two controls. Preview only: intentionally NOT links. -->
+        <span slot="regulation-game" aria-label="Regulamento do Game da Black — destino a confirmar">REGULAMENTO DO GAME DA BLACK</span>
+        <span slot="regulation-black" aria-label="Regulamento Black Friday — destino a confirmar">REGULAMENTO BLACK FRIDAY</span>
+        <a slot="offers" href="https://institucional.condor.com.br/ofertas/">CONFIRA AQUI AS MELHORES OFERTAS DA BLACK DO CONDOR</a>
+      </PostGameBottom>
+    </main>
+  </body>
+</html>

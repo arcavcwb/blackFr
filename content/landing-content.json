@@ -1,0 +1,241 @@
+{
+  "seo": {
+    "title": "Black Todo Dia é no Condor | Black Friday Condor 2026",
+    "description": "Aqui a Black Friday não para um dia sequer: ofertas imperdíveis todos os dias, a promoção Condor Premia com R$ 500.000,00 em prêmios todo mês e o Game da Black, que concorre a 5 PlayStation 5.",
+    "ogImage": "/assets/black-friday/og.jpg"
+  },
+  "menu": [
+    {
+      "rotulo": "Home",
+      "href": "#home"
+    },
+    {
+      "rotulo": "Sobre a Campanha",
+      "href": "#sobre"
+    },
+    {
+      "rotulo": "Como Participar",
+      "href": "#como-participar"
+    },
+    {
+      "rotulo": "Game da Black",
+      "href": "#game-da-black"
+    },
+    {
+      "rotulo": "Regulamento",
+      "href": "#regulamento"
+    }
+  ],
+  "hero": {
+    "titulo": "Black Todo Dia é no Condor. Aqui a Black não para."
+  },
+  "video": {
+    "src": "/assets/black-friday/video/video-black-friday-2026.mp4",
+    "youtubeId": "",
+    "rotulo": "Assistir ao vídeo da Black Todo Dia",
+    "capaAlt": "Casal sorrindo, iluminado pela luz azul da Black Todo Dia"
+  },
+  "sobre": {
+    "titulo": "Aqui a Black Friday não para um dia sequer.",
+    "paragrafos": [
+      "A maior **Black** do momento é do **Condor**. E não poderia ser diferente: quem é **sempre mais barato** só pode oferecer ainda **mais vantagens** pra você. São **ofertas imperdíveis** todos os dias, com oportunidades realmente exclusivas.",
+      "E tem mais: a promoção **Condor Premia** continua valendo. Você pode **encher o carrinho** de compras e o bolso de dinheiro na **Black Todo Dia do Condor**."
+    ],
+    "premiosAlt": "Concorra a R$ 500.000,00 todo mês: mais de 30 vales-compras todos os meses e 1 ano de supermercado grátis. Receba seu prêmio em dinheiro pelo Z-ON. Consulte o regulamento completo no site condor.com.br/premia. Certificado de Autorização SPA/ME Nº 04.047913/2026."
+  },
+  "comoParticipar": {
+    "titulo": "Veja como é fácil participar!",
+    "passos": [
+      {
+        "titulo": "Cadastre-se\nno Clube Condor",
+        "descricao": "Mantenha seu cadastro ativo no Clube Condor, com CPF e número de celular válidos.",
+        "cta": {
+          "rotulo": "Baixe o aplicativo",
+          "href": "https://clubecondor.com/"
+        }
+      },
+      {
+        "titulo": "Faça compras no Condor",
+        "descricao": "Realize compras em qualquer uma das lojas da Rede e informe seu CPF no caixa."
+      },
+      {
+        "titulo": "Ganhe números da sorte\na cada R$ 50,00",
+        "descricao": "A cada R$ 50 em compras, você recebe 1 número da sorte para concorrer aos prêmios."
+      },
+      {
+        "titulo": "Pronto!",
+        "descricao": "Você já estará concorrendo a R$ 500 mil por mês, 1 ano de supermercado grátis e a mais de 30 vales-compras todos os meses."
+      }
+    ],
+    "zon": "Pagando com Z-ON Card,\nsuas chances dobram.\nPeça já o seu.",
+    "aviso": {
+      "texto": "Atenção! Para participar da promoção, seu cadastro no Clube Condor precisa estar 100% completo e atualizado em 2026. Sem isso, seus Números da Sorte não serão válidos!",
+      "destaque": "Atualize pelo site ou app e garanta sua chance de ganhar!"
+    }
+  },
+  "game": {
+    "titulo": "GDB: Game da Black",
+    "imagemAlt": "Game da Black: sua missão, economizar; seu prêmio, PlayStation 5. Participe do Game da Black e concorra a um superprêmio.",
+    "linhas": [
+      "Quer **aproveitar** os descontos exclusivos da **Black Todo Dia** e ainda concorrer a um dos **videogames mais desejados** do mundo?",
+      "É isso mesmo. No nosso game, você desbloqueia ofertas, começa a economizar e ainda **concorre a 5 PlayStation 5**, o lançamento mais esperado do ano. **Você não pode perder.**"
+    ],
+    "passos": {
+      "titulo": "É muito fácil participar do Game da Black",
+      "itens": [
+        {
+          "titulo": "Acesse o app Clube Condor",
+          "descricao": "Entre na Trilha da Black e confira se seu cadastro está completo e atualizado."
+        },
+        {
+          "titulo": "Ative as ofertas",
+          "descricao": "Escolha e ative as ofertas da semana antes de realizar suas compras."
+        },
+        {
+          "titulo": "Compre e ganhe números da sorte",
+          "descricao": "Compre **3 produtos diferentes** das ofertas ativadas em uma loja Condor, informe seu CPF no caixa e ganhe **1 número da sorte**. Comprando os **5 produtos**, você pode ganhar mais 1 número, **quando houver bônus**."
+        },
+        {
+          "titulo": "Acompanhe e concorra!",
+          "descricao": "Confira seus números da sorte no app e participe dos sorteios da promoção!"
+        }
+      ]
+    },
+    "cta": {
+      "rotulo": "Baixe o app Clube Condor e acesse o Game da Black",
+      "href": "https://clubecondor.com/"
+    }
+  },
+  "regulamento": {
+    "titulo": "Regulamentos e ofertas",
+    "botoes": [
+      {
+        "rotulo": "Regulamento do Game da Black",
+        "href": ""
+      },
+      {
+        "rotulo": "Regulamento Black Friday",
+        "href": ""
+      },
+      {
+        "rotulo": "Confira aqui as melhores ofertas da Black do Condor. Aqui a economia não para.",
+        "href": "https://institucional.condor.com.br/ofertas/"
+      }
+    ]
+  },
+  "faq": {
+    "titulo": "Perguntas frequentes",
+    "itens": [
+      {
+        "pergunta": "Pergunta 1",
+        "resposta": "Resposta resposta resposta resposta resposta resposta resposta resposta resposta resposta resposta resposta resposta resposta resposta resposta."
+      },
+      {
+        "pergunta": "Pergunta 2",
+        "resposta": "Resposta resposta resposta resposta resposta resposta resposta resposta."
+      },
+      {
+        "pergunta": "Pergunta 3",
+        "resposta": "Resposta resposta resposta resposta resposta resposta resposta resposta."
+      },
+      {
+        "pergunta": "Pergunta 4",
+        "resposta": "Resposta resposta resposta resposta resposta resposta resposta resposta."
+      }
+    ]
+  },
+  "canais": {
+    "titulo": "Nossos canais de comunicação",
+    "cartoes": [
+      {
+        "titulo": "Elogios, dúvidas ou sugestões",
+        "contatos": [
+          {
+            "rotulo": "SAC: 0800 416655",
+            "href": "tel:0800416655"
+          },
+          {
+            "rotulo": "institucional.condor.com.br/sac",
+            "href": "https://institucional.condor.com.br/sac"
+          }
+        ]
+      },
+      {
+        "titulo": "É um dos ganhadores?",
+        "subtitulo": "Você poderá ser contatado por um dos canais abaixo:",
+        "contatos": [
+          {
+            "rotulo": "Tel: (41) 3888-3773",
+            "href": "tel:+554138883773"
+          }
+        ]
+      }
+    ]
+  },
+  "rodape": {
+    "legal": "Poderá participar desta campanha promocional qualquer consumidor que efetuar uma compra de R$50,00 nas lojas Condor no período de 16/02/2026 a 15/02/2027, pessoa física, maior de 18 anos, que possua cadastro atualizado no Clube Condor a partir de 01/01/2026, com CPF e número de celular válidos, e que tenha confirmado sua participação por meio de SMS, WhatsApp, site, aplicativo ou e-mail. Promoção autorizada pela SPA/ME Nº xx.xxxxxx/2026. Imagens meramente ilustrativas.",
+    "links": [
+      {
+        "icone": "📜",
+        "rotulo": "Regulamento",
+        "href": "https://www.condor.com.br/premia"
+      },
+      {
+        "icone": "📞",
+        "rotulo": "Fale Conosco",
+        "href": "https://institucional.condor.com.br/sac"
+      },
+      {
+        "icone": "📍",
+        "rotulo": "Lojas Participantes",
+        "href": ""
+      },
+      {
+        "icone": "🔒",
+        "rotulo": "Política de Privacidade",
+        "href": ""
+      }
+    ],
+    "copyright": "© 2026 Condor Super Center. Todos os direitos reservados.",
+    "redes": [
+      {
+        "rede": "facebook",
+        "rotulo": "Facebook",
+        "href": "https://www.facebook.com/redecondor",
+        "cor": "#1877F2"
+      },
+      {
+        "rede": "instagram",
+        "rotulo": "Instagram",
+        "href": "https://www.instagram.com/redecondor/",
+        "cor": "#E4405F"
+      },
+      {
+        "rede": "tiktok",
+        "rotulo": "TikTok",
+        "href": "https://www.tiktok.com/@redecondor",
+        "cor": "#FFFFFF",
+        "corIcone": "#000000"
+      },
+      {
+        "rede": "youtube",
+        "rotulo": "YouTube",
+        "href": "https://www.youtube.com/redecondor",
+        "cor": "#FF0000"
+      },
+      {
+        "rede": "linkedin",
+        "rotulo": "LinkedIn",
+        "href": "https://www.linkedin.com/company/redecondor",
+        "cor": "#0A66C2"
+      },
+      {
+        "rede": "threads",
+        "rotulo": "Threads",
+        "href": "https://www.threads.net/@redecondor",
+        "cor": "#FFFFFF",
+        "corIcone": "#000000"
+      }
+    ]
+  }
+}

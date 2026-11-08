@@ -1,0 +1,31 @@
+{
+  "version": "consolidado 2026-11-08",
+  "archivos_registrados": 155,
+  "categorias": {
+    "Material suministrado por usuario": 16,
+    "Recortes premios": 3,
+    "Assets separados Condor Premia": 22,
+    "Referencias de logos recortadas": 3,
+    "Diseño generado y validado visualmente": 3,
+    "4 cards GDB separados": 8,
+    "Implementación aprobada zona inferior": 27,
+    "Design System": 13,
+    "Recorte extra": 2,
+    "Versiones previas de componentes": 33,
+    "Iteraciones historicas": 21,
+    "Captura de auditoria": 4
+  },
+  "estados": {
+    "REFERENCIA / ORIGEN SIN EDICION": 16,
+    "DERIVADO DEL PNG ORIGINAL": 3,
+    "DERIVADO DE CAPTURA": 22,
+    "RECORTADO / NO MASTER OFICIAL": 3,
+    "APROBADO COMO REFERENCIA / NO ES MASTER OFICIAL": 3,
+    "APROBADO PARA REFERENCIA; RASTER RECORTADO": 8,
+    "CODIGO PROPUESTO / REQUIERE BUILD E INTEGRACION": 27,
+    "PROPUESTA V1.0 / REQUIERE VALIDACION": 13,
+    "REFERENCIA RECORTADA / NO LOGO MAESTRO": 2,
+    "HISTORICO": 37,
+    "HISTORICO / NO APROBADO COMO MASTER": 21
+  }
+}

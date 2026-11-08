@@ -1,0 +1,1 @@
+Estos archivos son recortes sin regeneracion de las capturas que compartiste. Clube Condor conserva el fondo azul de su captura. GDB conserva el fondo original capturado y no es un PNG de logo aislado/transparente. Su fidelidad esta limitada a la resolucion de las capturas.

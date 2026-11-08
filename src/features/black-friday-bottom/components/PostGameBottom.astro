@@ -1,0 +1,31 @@
+---
+import type { FaqItem, ContactInfo } from '../types';
+import { contactItems } from '../data/contacts';
+import CampaignActions from './CampaignActions.astro';
+import FaqAccordion from './FaqAccordion.astro';
+import ContactSection from './ContactSection.astro';
+interface Props {
+  faqs: readonly FaqItem[];
+  contacts?: readonly ContactInfo[];
+  id?: string;
+}
+const { faqs, contacts = contactItems, id = 'pos-game-da-black' } = Astro.props;
+---
+<div id={id} class="bg-[#08090D] px-4 pb-12 pt-10 text-white sm:px-6 sm:pb-16 sm:pt-16 lg:px-8">
+  <div class="mx-auto w-full max-w-[1200px]">
+    <CampaignActions>
+      <slot name="primary" slot="primary" />
+      <slot name="regulation-game" slot="regulation-game" />
+      <slot name="regulation-black" slot="regulation-black" />
+      <slot name="offers" slot="offers" />
+    </CampaignActions>
+
+    <div class="mt-20 sm:mt-24">
+      <FaqAccordion items={faqs} />
+    </div>
+
+    <div class="mx-auto mt-20 max-w-[920px] border-t border-[#21436F] pt-16 sm:mt-24 sm:pt-20">
+      <ContactSection contacts={contacts} />
+    </div>
+  </div>
+</div>

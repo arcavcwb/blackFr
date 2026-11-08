@@ -22,3 +22,14 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Paquete temporal de importación
+.import-condor/
+
+# Variables de entorno locales
+.env.*
+!.env.example
+
+# Orch — estado local de ejecución
+.orchestrator/state/*
+!.orchestrator/state/.gitkeep

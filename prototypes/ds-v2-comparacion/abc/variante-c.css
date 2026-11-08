@@ -1,0 +1,43 @@
+/* Fase 1B. Hipótesis C: ningún selector se aplica a A/B ni a los PNG. */
+.variant-c:not(.references-mode) .html-panel .step {
+  padding:42px 18px 24px;
+  border-width:1.5px;
+  border-radius:22px;
+  box-shadow:0 0 5px rgba(22,186,255,.55),0 0 18px rgba(0,108,230,.20);
+}
+.variant-c:not(.references-mode) .html-panel .step-number {
+  top:-23px;
+  height:46px;
+  min-width:70px;
+  font-size:30px;
+  border-radius:13px;
+  box-shadow:0 4px 10px rgba(0,0,0,.20);
+}
+.variant-c:not(.references-mode) .html-panel .step h2 {
+  min-height:64px;
+  padding:10px 12px;
+  margin-bottom:12px;
+  font-size:18px;
+  font-weight:800;
+  line-height:1.2;
+  letter-spacing:-.02em;
+}
+.variant-c:not(.references-mode) .html-panel .illustration {
+  height:190px;
+  max-width:260px;
+  margin-bottom:16px;
+}
+.variant-c:not(.references-mode) .html-panel .step-copy {
+  font-size:15px;
+  line-height:1.4;
+}
+.variant-c:not(.references-mode) .html-panel .bonus {
+  margin-top:10px;
+  padding:9px 10px;
+  border-width:1px;
+  font-weight:600;
+  line-height:1.4;
+}
+@media (min-width:640px) and (max-width:1279px) {
+  .variant-c:not(.references-mode) .html-panel .illustration {height:200px;}
+}

@@ -1,0 +1,33 @@
+---
+import { Image } from 'astro:assets';
+import type { ParticipationStep } from '../types';
+
+interface Props {
+  step: ParticipationStep;
+}
+
+const { step } = Astro.props;
+---
+
+<article class="gdb-step">
+  <span class="gdb-step__number" aria-hidden="true">{step.number}</span>
+  <h3 class="gdb-step__title">{step.title}</h3>
+
+  <div class="gdb-step__visual" aria-hidden="true">
+    <Image
+      src={step.illustration}
+      alt=""
+      class="gdb-step__image"
+      loading="lazy"
+      decoding="async"
+      format="webp"
+      quality={85}
+    />
+  </div>
+
+  <div class="gdb-step__copy">
+    <p class="gdb-step__description">{step.description}</p>
+    {step.result && <p class="gdb-step__result">{step.result}</p>}
+    {step.bonus && <p class="gdb-step__bonus">{step.bonus}</p>}
+  </div>
+</article>

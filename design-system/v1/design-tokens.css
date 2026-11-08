@@ -1,0 +1,44 @@
+/* Black Friday Condor 2026 — Design System v1.0 (PROPUESTA)
+   Neutral CSS custom properties: compatible con proyectos Tailwind v3 y v4.
+   No sustituye configuración ni estilos del proyecto existente.
+   NO aplicar a imágenes, marcas, hero, premios ni banner blanco protegidos. */
+:root {
+  --bf-canvas: #08090D;
+  --bf-surface: #10141E;
+  --bf-text: #F5F7FF;
+  --bf-muted: #B9C4D7;
+  --bf-divider: #1450D2;
+  --bf-condor-primary: #0003EF;
+  --bf-condor-yellow: #FFD000;
+  --bf-premia-gold: #D7A91C;
+  --bf-gdb-canvas: #06152D;
+  --bf-gdb-surface: #071D4B;
+  --bf-gdb-border: #00C7FF;
+  --bf-gdb-yellow: #FBE95A;
+  --bf-focus: #FBE95A;
+
+  --bf-container: 1200px;
+  --bf-container-wide: 1280px;
+  --bf-page-gutter: 16px;
+  --bf-section-space: 48px;
+  --bf-card-gap: 16px;
+  --bf-card-padding: 20px;
+  --bf-card-radius: 20px;
+  --bf-control-radius: 999px;
+
+  --bf-type-display: clamp(2.25rem, 4vw, 3.75rem);
+  --bf-type-section: clamp(1.75rem, 3vw, 2.5rem);
+  --bf-type-card: clamp(1.125rem, 1.5vw, 1.375rem);
+  --bf-type-body: 1rem;
+  --bf-type-caption: .875rem;
+  --bf-motion-ui: 180ms;
+}
+@media (min-width: 640px) {
+  :root { --bf-page-gutter: 24px; --bf-section-space: 64px; --bf-card-gap: 20px; }
+}
+@media (min-width: 1280px) {
+  :root { --bf-page-gutter: 32px; --bf-section-space: 88px; --bf-card-gap: 24px; --bf-card-padding: 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --bf-motion-ui: 0ms; }
+}
