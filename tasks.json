@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "default_cheap_model": "codex/gpt-5.6-luna",
+    "default_premium_model": "codex/gpt-6.1-sol",
+    "default_standard_model": "codex/gpt-6.1-terra",
+    "project": "black-friday",
+    "generatedAt": "2026-11-08",
+    "note": "Skeleton created by `orch init`. Add tasks by editing this file directly OR by writing specs under specs/ and running `orch atomize --file specs/YOUR-SPEC.md --apply`."
+  },
+  "phases": [
+    {
+      "id": 0,
+      "name": "F0 — Preparación y contratos"
+    },
+    {
+      "id": 1,
+      "name": "F1 — Integración estática Astro"
+    },
+    {
+      "id": 2,
+      "name": "F2 — Motion HYBRID y QA"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "F0.1.T1",
+      "phase": 0,
+      "title": "Auditar contenido y assets",
+      "description": "",
+      "model": "codex/gpt-5.6-luna",
+      "reason": "Auditoría documental de complejidad baja.",
+      "status": "backlog",
+      "dependencies": [],
+      "estimateHours": 0.75,
+      "files": [
+        "docs/implementation/F0_BASELINE_AUDIT.md"
+      ],
+      "specRef": "f0-preparacion.md#F0.1.T1",
+      "comments": []
+    },
+    {
+      "id": "F0.1.T2",
+      "phase": 0,
+      "title": "Revisar Design System v2",
+      "description": "",
+      "model": "codex/gpt-6.1-terra",
+      "reason": "Análisis técnico de complejidad media.",
+      "status": "backlog",
+      "dependencies": [
+        "F0.1.T1"
+      ],
+      "estimateHours": 1.0,
+      "files": [
+        "docs/implementation/F0_DESIGN_REVIEW.md"
+      ],
+      "specRef": "f0-preparacion.md#F0.1.T2",
+      "comments": []
+    },
+    {
+      "id": "F0.1.T3",
+      "phase": 0,
+      "title": "Evaluar preparación para Astro",
+      "description": "",
+      "model": "codex/gpt-6.1-sol",
+      "reason": "Evaluación de arquitectura y dependencias.",
+      "status": "backlog",
+      "dependencies": [
+        "F0.1.T1",
+        "F0.1.T2"
+      ],
+      "estimateHours": 1.0,
+      "files": [
+        "docs/implementation/F0_READINESS.md"
+      ],
+      "specRef": "f0-preparacion.md#F0.1.T3",
+      "comments": []
+    }
+  ]
+}

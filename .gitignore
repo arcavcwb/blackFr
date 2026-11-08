@@ -33,3 +33,6 @@ pnpm-debug.log*
 # Orch — estado local de ejecución
 .orchestrator/state/*
 !.orchestrator/state/.gitkeep
+
+# Backups de Orch
+tasks.json.bak-*
