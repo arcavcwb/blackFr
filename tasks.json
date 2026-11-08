@@ -74,6 +74,252 @@
       ],
       "specRef": "f0-preparacion.md#F0.1.T3",
       "comments": []
+    },
+    {
+      "id": "F1.1.T1",
+      "phase": 1,
+      "title": "Preparar estructura Astro y estilos base",
+      "description": "",
+      "model": "codex/gpt-6-luna",
+      "reason": "Integración inicial de configuración y estilos.",
+      "status": "backlog",
+      "dependencies": [
+        "F0.1.T3"
+      ],
+      "estimateHours": 1.0,
+      "files": [
+        "astro.config.mjs",
+        "src/styles/",
+        "src/layouts/"
+      ],
+      "specRef": "f1-f2-implementacion.md#F1.1.T1",
+      "comments": []
+    },
+    {
+      "id": "F1.1.T2",
+      "phase": 1,
+      "title": "Adaptar contenido canónico a TypeScript",
+      "description": "",
+      "model": "codex/gpt-5.6-terra",
+      "reason": "Adaptación tipada con reglas editoriales estrictas.",
+      "status": "backlog",
+      "dependencies": [
+        "F1.1.T1"
+      ],
+      "estimateHours": 1.0,
+      "files": [
+        "src/data/",
+        "src/features/game-da-black/data/"
+      ],
+      "specRef": "f1-f2-implementacion.md#F1.1.T2",
+      "comments": []
+    },
+    {
+      "id": "F1.1.T3",
+      "phase": 1,
+      "title": "Integrar hero y video promocional",
+      "description": "",
+      "model": "codex/gpt-5.6-sol",
+      "reason": "Composición visual con recursos originales protegidos.",
+      "status": "backlog",
+      "dependencies": [
+        "F1.1.T2"
+      ],
+      "estimateHours": 1.5,
+      "files": [
+        "src/features/black-friday-hero/"
+      ],
+      "specRef": "f1-f2-implementacion.md#F1.1.T3",
+      "comments": []
+    },
+    {
+      "id": "F1.1.T4",
+      "phase": 1,
+      "title": "Integrar Condor Premia y Z-ON",
+      "description": "",
+      "model": "codex/gpt-6-sol",
+      "reason": "Secciones con composición y reglas comerciales.",
+      "status": "backlog",
+      "dependencies": [
+        "F1.1.T2"
+      ],
+      "estimateHours": 1.5,
+      "files": [
+        "src/features/condor-premia/",
+        "src/features/z-on/"
+      ],
+      "specRef": "f1-f2-implementacion.md#F1.1.T4",
+      "comments": []
+    },
+    {
+      "id": "F1.1.T5",
+      "phase": 1,
+      "title": "Implementar Game da Black variante C",
+      "description": "",
+      "model": "codex/gpt-6.1-terra",
+      "reason": "Fidelidad visual, componentes reutilizables y responsive.",
+      "status": "backlog",
+      "dependencies": [
+        "F1.1.T2"
+      ],
+      "estimateHours": 2.0,
+      "files": [
+        "src/features/game-da-black/"
+      ],
+      "specRef": "f1-f2-implementacion.md#F1.1.T5",
+      "comments": []
+    },
+    {
+      "id": "F1.1.T6",
+      "phase": 1,
+      "title": "Integrar CTA, FAQ y contacto",
+      "description": "",
+      "model": "codex/gpt-6-luna",
+      "reason": "Componentes nativos y reutilización del código existente.",
+      "status": "backlog",
+      "dependencies": [
+        "F1.1.T2"
+      ],
+      "estimateHours": 1.0,
+      "files": [
+        "src/features/black-friday-bottom/"
+      ],
+      "specRef": "f1-f2-implementacion.md#F1.1.T6",
+      "comments": []
+    },
+    {
+      "id": "F1.1.T7",
+      "phase": 1,
+      "title": "Componer landing completa",
+      "description": "",
+      "model": "codex/gpt-6.1-sol",
+      "reason": "Integración de todas las secciones.",
+      "status": "backlog",
+      "dependencies": [
+        "F1.1.T3",
+        "F1.1.T4",
+        "F1.1.T5",
+        "F1.1.T6"
+      ],
+      "estimateHours": 1.5,
+      "files": [
+        "src/pages/black-friday.astro"
+      ],
+      "specRef": "f1-f2-implementacion.md#F1.1.T7",
+      "comments": []
+    },
+    {
+      "id": "F1.1.T8",
+      "phase": 1,
+      "title": "QA de integración estática",
+      "description": "",
+      "model": "codex/gpt-6-astra",
+      "reason": "Revisión integral independiente de la integración.",
+      "status": "backlog",
+      "dependencies": [
+        "F1.1.T7"
+      ],
+      "estimateHours": 1.5,
+      "files": [
+        "docs/implementation/F1_QA.md"
+      ],
+      "specRef": "f1-f2-implementacion.md#F1.1.T8",
+      "comments": []
+    },
+    {
+      "id": "F2.1.T1",
+      "phase": 2,
+      "title": "Verificar recursos para motion",
+      "description": "",
+      "model": "codex/gpt-5.6-luna",
+      "reason": "Comprobación documental de capas y fallbacks.",
+      "status": "backlog",
+      "dependencies": [
+        "F1.1.T8"
+      ],
+      "estimateHours": 0.75,
+      "files": [
+        "docs/implementation/F2_ASSET_CHECK.md"
+      ],
+      "specRef": "f1-f2-implementacion.md#F2.1.T1",
+      "comments": []
+    },
+    {
+      "id": "F2.1.T2",
+      "phase": 2,
+      "title": "Implementar infraestructura GSAP accesible",
+      "description": "",
+      "model": "codex/gpt-6.1-terra",
+      "reason": "Ciclo de vida, accesibilidad y recuperación.",
+      "status": "backlog",
+      "dependencies": [
+        "F1.1.T8"
+      ],
+      "estimateHours": 1.5,
+      "files": [
+        "src/features/motion/"
+      ],
+      "specRef": "f1-f2-implementacion.md#F2.1.T2",
+      "comments": []
+    },
+    {
+      "id": "F2.1.T3",
+      "phase": 2,
+      "title": "Animar tarjetas y secciones secundarias",
+      "description": "",
+      "model": "codex/gpt-5.6-sol",
+      "reason": "Secuencias independientes de complejidad media.",
+      "status": "backlog",
+      "dependencies": [
+        "F2.1.T2"
+      ],
+      "estimateHours": 1.5,
+      "files": [
+        "src/features/game-da-black/motion/",
+        "src/features/black-friday-bottom/motion/"
+      ],
+      "specRef": "f1-f2-implementacion.md#F2.1.T3",
+      "comments": []
+    },
+    {
+      "id": "F2.1.T4",
+      "phase": 2,
+      "title": "Animar hero, Premia y KV",
+      "description": "",
+      "model": "codex/gpt-6-sol",
+      "reason": "Coordinación de secuencias visuales complejas.",
+      "status": "backlog",
+      "dependencies": [
+        "F2.1.T1",
+        "F2.1.T2"
+      ],
+      "estimateHours": 2.0,
+      "files": [
+        "src/features/black-friday-hero/motion/",
+        "src/features/condor-premia/motion/",
+        "src/features/game-da-black/motion/"
+      ],
+      "specRef": "f1-f2-implementacion.md#F2.1.T4",
+      "comments": []
+    },
+    {
+      "id": "F2.1.T5",
+      "phase": 2,
+      "title": "QA final de motion y rendimiento",
+      "description": "",
+      "model": "codex/gpt-6-astra",
+      "reason": "Verificación integral, accesibilidad y rendimiento.",
+      "status": "backlog",
+      "dependencies": [
+        "F2.1.T3",
+        "F2.1.T4"
+      ],
+      "estimateHours": 2.0,
+      "files": [
+        "docs/implementation/F2_QA.md"
+      ],
+      "specRef": "f1-f2-implementacion.md#F2.1.T5",
+      "comments": []
     }
   ]
 }
