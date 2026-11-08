@@ -121,7 +121,7 @@ tunnel:
 # directory is always cleaned up after the task exits (success or failure).
 dispatch:
   worktree_mode: true    # on by default — set to false to run agents in-place
-  base_branch: master      # branch new worktrees are based on
+  base_branch: experiment/orch-v030      # branch new worktrees are based on
   # Run in each fresh worktree before the agent starts, so its tests find
   # their dependencies, e.g. "pnpm install --frozen-lockfile" or "uv sync --frozen".
   worktree_setup: "pnpm install --frozen-lockfile"
