@@ -111,7 +111,7 @@ dashboard:
 # request through the tunnel must carry the token in the link orch prints,
 # and the link changes on every start.
 tunnel:
-  enabled: false
+  enabled: true
 
 # Sprint F-2 — git worktree isolation per task.
 # When worktree_mode is true, each dispatched task runs in a dedicated
@@ -153,7 +153,7 @@ verify:
   enabled: true
   review: true
   reviewer: codex
-  review_model: gpt-6-astra
+  review_model: gpt-5.6-terra
   # commands: ["make test"]   # [] = what `orch ci setup` detects
   # app:                      # the task's own app, for E2E
   #   start: docker compose up -d --build
