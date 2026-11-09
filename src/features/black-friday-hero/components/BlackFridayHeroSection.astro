@@ -1,0 +1,21 @@
+---
+import HeroArtwork from './HeroArtwork.astro';
+import PromotionalVideo from './PromotionalVideo.astro';
+
+interface Props {
+	heroId?: string;
+	videoId?: string;
+	class?: string;
+}
+
+const {
+	heroId = 'home',
+	videoId = 'black-friday-video',
+	class: className = '',
+} = Astro.props;
+---
+
+<div class:list={['bg-black', className]}>
+	<HeroArtwork id={heroId} />
+	<PromotionalVideo id={videoId} />
+</div>

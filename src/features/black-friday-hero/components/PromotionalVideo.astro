@@ -1,0 +1,32 @@
+---
+import { videoContent } from '../../../data/landing-content';
+import verifiedVideoSource from '../../../../assets/optimized/video/video-black-friday-2026.mp4?url';
+
+interface Props {
+	id?: string;
+	class?: string;
+}
+
+const { id = 'black-friday-video', class: className = '' } = Astro.props;
+---
+
+<section
+	id={id}
+	aria-label={videoContent.rotulo}
+	class:list={['bg-black px-[var(--page-gutter)] pb-12 pt-8 sm:pb-16 sm:pt-12 lg:pb-20', className]}
+>
+	<div
+		class="mx-auto aspect-video w-full max-w-[1120px] overflow-hidden rounded-[clamp(1rem,2.4vw,2rem)] bg-[#071525] shadow-[0_0_0_1px_rgba(32,94,172,0.3)]"
+	>
+		<video
+			class="block size-full object-contain"
+			controls
+			playsinline
+			preload="metadata"
+			aria-label={videoContent.rotulo}
+		>
+			<source src={verifiedVideoSource} type="video/mp4" />
+			<a href={verifiedVideoSource}>{videoContent.rotulo}</a>
+		</video>
+	</div>
+</section>

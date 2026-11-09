@@ -1,0 +1,53 @@
+---
+import { Image } from 'astro:assets';
+import { heroContent } from '../../../data/landing-content';
+import heroBackground from '../../../../assets/originals/hero/hero-fundo-figma-v04.png';
+import heroPresenter from '../../../../assets/originals/hero/hero-apresentadora-v04.png';
+import heroTitle from '../../../../assets/originals/hero/hero-titulo-black-todo-dia-v04.png';
+
+interface Props {
+	id?: string;
+	class?: string;
+}
+
+const { id = 'home', class: className = '' } = Astro.props;
+const titleId = `${id}-title`;
+---
+
+<section
+	id={id}
+	aria-labelledby={titleId}
+	class:list={['isolate overflow-hidden bg-black', className]}
+>
+	<h1 id={titleId} class="sr-only">{heroContent.titulo}</h1>
+
+	<div class="relative mx-auto aspect-[1440/914] w-full max-w-[1440px]">
+		<Image
+			src={heroBackground}
+			alt=""
+			aria-hidden="true"
+			class="absolute inset-0 z-0 block size-full object-contain"
+			loading="eager"
+			decoding="async"
+		/>
+
+		<Image
+			src={heroTitle}
+			alt=""
+			aria-hidden="true"
+			class="absolute left-[2.5%] top-[24.6%] z-10 block h-auto w-[54.94%]"
+			loading="eager"
+			decoding="async"
+			fetchpriority="high"
+		/>
+
+		<Image
+			src={heroPresenter}
+			alt=""
+			aria-hidden="true"
+			class="absolute bottom-0 right-0 z-20 block h-auto w-[45.14%]"
+			loading="eager"
+			decoding="async"
+		/>
+	</div>
+</section>
