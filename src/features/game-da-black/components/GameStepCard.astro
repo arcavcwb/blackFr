@@ -2,58 +2,32 @@
 import { Image } from 'astro:assets';
 import type { ParticipationStep } from '../types';
 
-interface Props {
-  step: ParticipationStep;
-}
-
+interface Props { step: ParticipationStep }
 const { step } = Astro.props;
+// The canonical description uses ** markers for emphasis. The final sentence
+// of step 3 is the conditional bonus, styled separately without changing it.
+const sentences = step.number === 3 ? step.description.split(/(?<=\.) (?=Comprando os )/) : [step.description];
+const parts = (text: string) => text.split(/(\*\*[^*]+\*\*)/g).filter(Boolean);
 ---
-
-<article
-  class="relative flex h-full min-w-0 flex-col rounded-[24px] border-2 border-[#16baff] bg-[linear-gradient(180deg,#052049_0%,#04172f_100%)] px-4 pb-5 pt-11 text-white shadow-[0_0_7px_rgba(34,195,255,0.9),0_0_23px_rgba(0,99,255,0.36),inset_0_0_16px_rgba(0,98,220,0.18)] transition-[transform,box-shadow] duration-200 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-[0_0_13px_rgba(34,195,255,1),0_0_30px_rgba(0,99,255,0.5)] motion-reduce:transition-none sm:px-5"
->
-  <span
-    aria-hidden="true"
-    class="absolute -top-[26px] left-1/2 grid h-[52px] min-w-[78px] -translate-x-1/2 place-items-center rounded-[14px] bg-[linear-gradient(165deg,#fff83f,#ffd500)] px-4 text-[2.125rem] font-black leading-none text-[#002255] shadow-[0_5px_14px_rgba(0,0,0,0.25)]"
-  >
-    {step.number}
-  </span>
-
-  <h3
-    class="grid min-h-[70px] place-items-center rounded-[15px] bg-[linear-gradient(160deg,#fff139_0%,#ffd800_100%)] px-3 py-2 text-center text-[clamp(1.1rem,1.55vw,1.375rem)] font-black leading-[1.13] text-[#062958] [text-wrap:balance]"
-  >
-    {step.title}
-  </h3>
-
-  <div
-    aria-hidden="true"
-    class="mx-auto my-2 grid h-[clamp(175px,53vw,235px)] w-full max-w-[290px] place-items-center sm:h-[220px] min-[1201px]:h-[clamp(172px,17vw,248px)]"
-  >
-    <Image
-      src={step.illustration}
-      alt=""
-      class="block h-full w-full object-contain"
-      loading="lazy"
-      decoding="async"
-      format="webp"
-      quality={85}
-      sizes="(max-width: 640px) 75vw, (max-width: 1200px) 290px, 22vw"
-    />
-  </div>
-
-  <div class="mt-auto grid gap-2 text-center">
-    <p class="text-[clamp(0.95rem,1.06vw,1.0625rem)] leading-[1.47] text-[#e0ecff]">
-      {step.description}
-    </p>
-
-    {step.result && (
-      <p class="text-base font-extrabold leading-[1.25]">{step.result}</p>
-    )}
-
-    {step.bonus && (
-      <p class="rounded-xl border-[1.5px] border-[#ffe500] px-2 py-2 text-sm font-bold leading-[1.3] text-[#ffe500]">
-        {step.bonus}
-      </p>
-    )}
-  </div>
+<article class="step">
+  <span class="step-number" aria-hidden="true">{step.number}</span>
+  <h3>{step.title}</h3>
+  <Image src={step.illustration} alt="" class="illustration" loading="lazy" decoding="async" />
+  <p class="step-copy">
+    {parts(sentences[0]).map((part) => part.startsWith('**') ? <strong>{part.slice(2, -2)}</strong> : part)}{sentences[1] && ' '}{sentences[1] && <span class="bonus">{parts(sentences[1]).map((part) => part.startsWith('**') ? <strong>{part.slice(2, -2)}</strong> : part)}</span>}
+  </p>
+  {step.result && <p class="step-copy result">{parts(step.result).map((part) => part.startsWith('**') ? <strong>{part.slice(2, -2)}</strong> : part)}</p>}
+  {step.bonus && <p class="step-copy bonus">{parts(step.bonus).map((part) => part.startsWith('**') ? <strong>{part.slice(2, -2)}</strong> : part)}</p>}
 </article>
+<style>
+  .step, .step * { box-sizing: border-box; }
+  .step { position:relative; height:100%; display:flex; flex-direction:column; min-width:0; padding:42px 18px 24px; border:1.5px solid #16baff; border-radius:22px; background:linear-gradient(180deg,#052049,#04172f); box-shadow:0 0 5px rgba(22,186,255,.55),0 0 18px rgba(0,108,230,.20); }
+  .step-number { position:absolute; top:-23px; left:50%; transform:translateX(-50%); height:46px; min-width:70px; display:grid; place-items:center; padding:0 16px; border-radius:13px; background:linear-gradient(165deg,#fff83f,#ffd500); color:#002255; font-size:30px; font-weight:900; font-style:italic; line-height:1; box-shadow:0 4px 10px rgba(0,0,0,.20); }
+  h3 { min-height:64px; display:flex; align-items:center; justify-content:center; text-align:center; padding:10px 12px; border-radius:999px; background:linear-gradient(160deg,#fff139,#ffd800); color:#062958; font-size:18px; font-weight:800; font-style:italic; line-height:1.2; letter-spacing:-.02em; text-wrap:balance; margin:0 0 12px; overflow-wrap:break-word; }
+  .illustration { display:block; object-fit:contain; height:190px; width:100%; max-width:260px; margin:0 auto 16px; }
+  .step-copy { font-size:15px; line-height:1.4; color:#e0ecff; text-align:center; margin:0; }
+  .step-copy strong { font-weight:800; }
+  .result { margin-top:10px; }
+  .bonus { display:block; border:1px solid #ffe500; border-radius:12px; padding:9px 10px; color:#ffe500; font-weight:600; margin-top:10px; line-height:1.4; }
+  @media (min-width:640px) and (max-width:1279px) { .illustration { height:200px; } }
+</style>

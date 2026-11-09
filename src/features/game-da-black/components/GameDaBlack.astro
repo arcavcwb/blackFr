@@ -1,0 +1,13 @@
+---
+import GameStepsSection from './GameStepsSection.astro';
+import { gameContent } from '../../../data/landing-content';
+import keyVisual from '../../../../assets/originals/game-da-black/gdb-key-visual-v03.png';
+---
+<div class="game-da-black">
+  <img src={keyVisual.src} width={keyVisual.width} height={keyVisual.height} alt={gameContent.imagemAlt} class="key-visual" loading="lazy" decoding="async" />
+  <GameStepsSection />
+</div>
+<style>
+  .game-da-black { background:#03142e; }
+  .key-visual { display:block; width:100%; height:auto; }
+</style>
