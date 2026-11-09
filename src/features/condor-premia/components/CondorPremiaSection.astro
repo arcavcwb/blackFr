@@ -1,0 +1,190 @@
+---
+import { aboutContent, condorPremiaContent } from '../../../data/landing-content';
+import prizeComposition from '../../../../assets/originals/condor-premia/premios/composicao-premios-fornecida.png';
+import firstPrize from '../../../../assets/derived/condor-premia/premios/premio-01-500-mil-reais.png';
+import secondPrize from '../../../../assets/derived/condor-premia/premios/premio-02-30-vales-compras.png';
+import thirdPrize from '../../../../assets/derived/condor-premia/premios/premio-03-um-ano-supermercado-gratis.png';
+import firstStep from '../../../../assets/derived/condor-premia/passos/cards-completos/passo-01-cadastre-se.png';
+import secondStep from '../../../../assets/derived/condor-premia/passos/cards-completos/passo-02-faca-compras.png';
+import thirdStep from '../../../../assets/derived/condor-premia/passos/cards-completos/passo-03-numeros-da-sorte.png';
+import fourthStep from '../../../../assets/derived/condor-premia/passos/cards-completos/passo-04-pronto.png';
+
+const stepImages = [firstStep, secondStep, thirdStep, fourthStep];
+---
+
+<section class="premia" aria-label="Condor Premia">
+  <figure class="premia__prizes" role="img" aria-label={aboutContent.premiosAlt}>
+    <img
+      class="premia__prize-composition"
+      src={prizeComposition.src}
+      width={prizeComposition.width}
+      height={prizeComposition.height}
+      alt=""
+      loading="lazy"
+      decoding="async"
+    />
+    <div class="premia__prize-pieces" aria-hidden="true">
+      {[firstPrize, secondPrize, thirdPrize].map((prize) => (
+        <img src={prize.src} width={prize.width} height={prize.height} alt="" loading="lazy" decoding="async" />
+      ))}
+    </div>
+  </figure>
+
+  <section id="como-participar" class="premia__participation" aria-labelledby="premia-steps-title">
+    <h2 id="premia-steps-title">{condorPremiaContent.titulo}</h2>
+    <ol class="premia__steps">
+      {condorPremiaContent.passos.map((step, index) => (
+        <li class="premia__step">
+          <article class="premia__card">
+            <img
+              src={stepImages[index].src}
+              width={stepImages[index].width}
+              height={stepImages[index].height}
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+            <h3 class="sr-only">{step.titulo}</h3>
+            <p class="sr-only">{step.descricao}</p>
+            {'cta' in step && step.cta && (
+              <a class="premia__app-link" href={step.cta.href} aria-label={step.cta.rotulo}>
+                <span class="sr-only">{step.cta.rotulo}</span>
+              </a>
+            )}
+          </article>
+        </li>
+      ))}
+    </ol>
+  </section>
+</section>
+
+<style>
+  .premia {
+    box-sizing: border-box;
+    background: #000;
+    color: #fff;
+    padding: clamp(48px, 7vw, 88px) 16px 48px;
+    text-align: center;
+  }
+
+  .premia__prizes {
+    width: min(100%, 1144px);
+    margin: 0 auto;
+  }
+
+  .premia__prize-composition,
+  .premia__prize-pieces img,
+  .premia__card img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .premia__prize-pieces {
+    display: none;
+  }
+
+  .premia__participation {
+    width: min(100%, 1040px);
+    margin: clamp(48px, 6vw, 80px) auto 0;
+  }
+
+  .premia__participation h2 {
+    margin: 0 0 28px;
+    font-family: inherit;
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 800;
+    line-height: 1.15;
+  }
+
+  .premia__steps {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(8px, 1vw, 16px);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .premia__step {
+    min-width: 0;
+  }
+
+  .premia__card {
+    position: relative;
+    width: 100%;
+    max-width: 246px;
+    margin: 0 auto;
+  }
+
+  .premia__app-link {
+    position: absolute;
+    top: 84%;
+    left: 17%;
+    width: 66%;
+    height: 12%;
+    border-radius: 999px;
+  }
+
+  .premia__app-link:focus-visible {
+    outline: 3px solid #fff36b;
+    outline-offset: 3px;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  @media (max-width: 699px) {
+    .premia__prize-composition {
+      display: none;
+    }
+
+    .premia__prize-pieces {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      justify-items: center;
+    }
+
+    .premia__prize-pieces img:first-child {
+      grid-column: 1 / -1;
+      max-width: 520px;
+    }
+
+    .premia__prize-pieces img:not(:first-child) {
+      max-width: 240px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .premia__steps {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px 12px;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .premia__prize-pieces {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 16px;
+    }
+
+    .premia__prize-pieces img:not(:first-child) {
+      max-width: 300px;
+    }
+
+    .premia__steps {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 16px;
+    }
+  }
+</style>

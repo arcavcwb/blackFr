@@ -1,0 +1,109 @@
+---
+import { condorPremiaContent } from '../../../data/landing-content';
+import warningIcon from '../../../../assets/originals/condor-premia/aviso/icone-alerta-exclamacao.png';
+import clubeLogo from '../../../../assets/originals/branding/logo-clube-condor-fornecido-96px.png';
+---
+
+<section class="zon" aria-labelledby="zon-title">
+  <h2 id="zon-title">{condorPremiaContent.zon}</h2>
+  <aside class="zon__notice" aria-label="Aviso sobre cadastro">
+    <img
+      class="zon__warning"
+      src={warningIcon.src}
+      width={warningIcon.width}
+      height={warningIcon.height}
+      alt=""
+      loading="lazy"
+      decoding="async"
+    />
+    <div class="zon__notice-copy">
+      <p>{condorPremiaContent.aviso.texto}</p>
+      <p class="zon__notice-emphasis">{condorPremiaContent.aviso.destaque}</p>
+    </div>
+    <img
+      class="zon__logo"
+      src={clubeLogo.src}
+      width={clubeLogo.width}
+      height={clubeLogo.height}
+      alt="Clube Condor"
+      loading="lazy"
+      decoding="async"
+    />
+  </aside>
+</section>
+
+<style>
+  .zon {
+    box-sizing: border-box;
+    background: #000;
+    color: #fff;
+    padding: 16px 16px clamp(48px, 6vw, 88px);
+    text-align: center;
+  }
+
+  .zon h2 {
+    width: min(100%, 1120px);
+    margin: 0 auto 28px;
+    font-family: inherit;
+    font-size: clamp(1.5rem, 2.6vw, 2.25rem);
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .zon__notice {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 80px minmax(0, 1fr) 72px;
+    align-items: center;
+    gap: 12px;
+    width: min(100%, 860px);
+    min-height: 136px;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 20px;
+    background: #fff;
+    color: #0003b8;
+    text-align: left;
+  }
+
+  .zon__warning,
+  .zon__logo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .zon__notice-copy {
+    min-width: 0;
+  }
+
+  .zon__notice-copy p {
+    margin: 0;
+    font-size: clamp(0.875rem, 1.4vw, 1rem);
+    line-height: 1.35;
+  }
+
+  .zon__notice-copy .zon__notice-emphasis {
+    margin-top: 8px;
+    font-size: clamp(1rem, 1.7vw, 1.25rem);
+    font-weight: 800;
+  }
+
+  @media (max-width: 600px) {
+    .zon__notice {
+      grid-template-columns: 52px minmax(0, 1fr);
+      gap: 8px 12px;
+      padding: 16px 12px;
+    }
+
+    .zon__warning {
+      align-self: start;
+    }
+
+    .zon__logo {
+      grid-column: 2;
+      width: 56px;
+      justify-self: end;
+    }
+  }
+</style>
