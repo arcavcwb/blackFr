@@ -1,10 +1,7 @@
 ---
-import { Image } from 'astro:assets';
 import GameStepCard from './GameStepCard.astro';
 import { participationSteps } from '../data/participationSteps';
 import { gameContent } from '../../../data/landing-content';
-import gdbLogo from '../../../assets/game-da-black/gdb-logo-original.png';
-import condorLogo from '../../../../assets/originals/branding/logo-condor-com-sombra.png';
 
 interface Props { id?: string; class?: string }
 const { id = 'game-da-black-como-participar', class: className = '' } = Astro.props;
@@ -13,10 +10,6 @@ const parts = (text: string) => text.split(/(\*\*[^*]+\*\*)/g).filter(Boolean);
 <section id={id} aria-labelledby={`${id}-title`} class:list={['game-steps', className]} data-gdb-motion-root>
   <div class="container">
     <header>
-      <div class="logos">
-        <Image src={gdbLogo} alt="GDB — Game da Black" class="gdb-logo" loading="lazy" />
-        <Image src={condorLogo} alt="Condor" class="condor-logo" loading="lazy" />
-      </div>
       <h2 id={`${id}-title`}>{gameContent.passos.titulo}</h2>
       <div class="intro">{gameContent.linhas.map((line) => <p>{parts(line).map((part) => part.startsWith('**') ? <strong>{part.slice(2, -2)}</strong> : part)}</p>)}</div>
     </header>
@@ -35,9 +28,6 @@ const parts = (text: string) => text.split(/(\*\*[^*]+\*\*)/g).filter(Boolean);
   .game-steps { padding:44px 16px 64px; color:#fff; font-family:Arial,system-ui,sans-serif; background:radial-gradient(ellipse at 50% 0,rgba(5,89,215,.34),transparent 60%),linear-gradient(180deg,#03142e,#052453 55%,#02112d); }
   .container { max-width:1400px; margin-inline:auto; min-width:0; }
   header { text-align:center; max-width:1000px; margin:0 auto 58px; }
-  .logos { display:flex; align-items:center; justify-content:center; gap:24px; margin-bottom:28px; }
-  .gdb-logo { width:82px; height:auto; object-fit:contain; }
-  .condor-logo { width:112px; height:auto; object-fit:contain; }
   h2 { font-size:clamp(1.8rem,3.6vw,3.5rem); line-height:1.1; letter-spacing:-.035em; font-weight:900; text-wrap:balance; margin:0 0 24px; }
   .intro { max-width:800px; margin-inline:auto; color:#e0ecff; font-size:16px; line-height:1.6; }
   .intro p { margin:0 0 1em; }

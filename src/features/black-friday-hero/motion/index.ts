@@ -44,14 +44,18 @@ export function mountHeroMotion(root: HTMLElement): () => void {
       context = gsap.context(() => {}, root);
       context.add(() => {
         const timeline = gsap.timeline({ onComplete: finish });
-        if (mobile.matches) {
-          // A short mobile sequence stays within the artwork's clipped bounds.
-          timeline.from(title, { y: 12, duration: 0.45, ease: 'power3.out' }, 0)
-            .from(presenter, { y: 14, scale: 0.99, transformOrigin: 'bottom right', duration: 0.5, ease: 'power3.out' }, 0.1);
-        } else {
-          timeline.from(title, { y: 20, duration: 0.55, ease: 'power3.out' }, 0.1)
-            .from(presenter, { y: 24, scale: 0.98, transformOrigin: 'bottom right', duration: 0.65, ease: 'power3.out' }, 0.3);
-        }
+        const compact = mobile.matches;
+        const distance = compact ? 16 : 28;
+        const riseDuration = compact ? 0.35 : 0.4;
+        const settleDuration = compact ? 0.6 : 0.7;
+        const presenterDelay = compact ? 0.15 : 0.2;
+        // Start from the already visible composition, including on slow loads.
+        // Opaque layers avoid exposing background panels through the presenter.
+        // Travel downward so the title never passes behind the tablet menu.
+        timeline.to(title, { y: `+=${distance}`, duration: riseDuration, ease: 'sine.out' }, 0)
+          .to(title, { y: `-=${distance}`, duration: settleDuration, ease: 'sine.inOut' }, riseDuration)
+          .to(presenter, { scale: compact ? '*=1.015' : '*=1.02', transformOrigin: 'bottom right', duration: riseDuration, ease: 'sine.out' }, presenterDelay)
+          .to(presenter, { scale: compact ? '/=1.015' : '/=1.02', duration: settleDuration, ease: 'sine.inOut' }, presenterDelay + riseDuration);
       });
     } catch (error) {
       try { finish(); }

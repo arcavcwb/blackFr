@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
-import { mkdtemp, mkdir, readFile, rm, stat, symlink, writeFile } from 'node:fs/promises';
+import { cp, mkdtemp, mkdir, readFile, rm, stat, symlink, writeFile } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
@@ -8,10 +8,15 @@ import { fileURLToPath } from 'node:url';
 
 const featureDirectory = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(featureDirectory, '../../..');
-const heroSectionComponent = path.join(
-	featureDirectory,
-	'components/BlackFridayHeroSection.astro',
-);
+const fixtureFiles = [
+	'src/features/black-friday-hero/components',
+	'src/data/landing-content.ts',
+	'content/landing-content.json',
+	'assets/originals/hero/hero-fundo-figma-v04.png',
+	'assets/originals/hero/hero-apresentadora-v04.png',
+	'assets/originals/hero/hero-titulo-black-todo-dia-v04.png',
+	'assets/optimized/video/video-black-friday-2026.mp4',
+];
 
 const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
@@ -35,6 +40,12 @@ test('BlackFridayHeroSection renders accessible IDs and a bundled video with nat
 	const fixture = await mkdtemp(path.join(os.tmpdir(), 'black-friday-hero-'));
 
 	try {
+		// Keep components inside the fixture root so Astro can bundle their scripts.
+		for (const file of fixtureFiles) {
+			const destination = path.join(fixture, file);
+			await mkdir(path.dirname(destination), { recursive: true });
+			await cp(path.join(repoRoot, file), destination, { recursive: true });
+		}
 		await mkdir(path.join(fixture, 'src/pages'), { recursive: true });
 		await symlink(path.join(repoRoot, 'node_modules'), path.join(fixture, 'node_modules'), 'dir');
 		await writeFile(path.join(fixture, 'package.json'), JSON.stringify({ type: 'module' }));
@@ -47,7 +58,7 @@ export default defineConfig({});
 		await writeFile(
 			path.join(fixture, 'src/pages/index.astro'),
 			`---
-import BlackFridayHeroSection from ${JSON.stringify(heroSectionComponent)};
+import BlackFridayHeroSection from '../features/black-friday-hero/components/BlackFridayHeroSection.astro';
 ---
 <BlackFridayHeroSection />
 <BlackFridayHeroSection heroId="campaign-hero" videoId="campaign-video" />
@@ -73,6 +84,7 @@ import BlackFridayHeroSection from ${JSON.stringify(heroSectionComponent)};
 		assert.equal(videoTags.length, 2);
 		videoTags.forEach((tag) => {
 			assert.match(tag, /\bcontrols(?:="")?(?=\s|>)/);
+			assert.match(tag, /\bmuted(?:="")?(?=\s|>)/);
 			assert.match(tag, /\bplaysinline(?:="")?(?=\s|>)/);
 			assert.match(tag, /\bpreload="metadata"/);
 		});

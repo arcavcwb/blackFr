@@ -26,8 +26,7 @@ test('Game da Black renders the canonical four steps, conditional bonus and orig
     const html = await readFile(path.join(fixture, 'dist/index.html'), 'utf8');
     const text = html.replace(/<style\b[^>]*>[\s\S]*?<\/style>/g, '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
     assert.match(html, /gdb-key-visual-v03[^" ]*\.png/);
-    assert.match(html, /logo-condor-com-sombra/);
-    assert.match(html, /gdb-logo-original/);
+    assert.doesNotMatch(html, /logo-condor-com-sombra|gdb-logo-original/);
     assert.equal((html.match(/<li\b/g) ?? []).length, 4);
     for (const [index, step] of content.game.passos.itens.entries()) {
       assert.match(html, new RegExp(`illustration-step-${index + 1}\\.`));
