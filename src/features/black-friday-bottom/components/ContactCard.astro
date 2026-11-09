@@ -3,7 +3,7 @@ import type { ContactInfo } from '../types';
 interface Props { contact: ContactInfo; }
 const { contact } = Astro.props;
 ---
-<article class="flex min-w-0 items-start gap-4 rounded-xl bg-[#F6F8FC] p-5 text-[#112952] shadow-[0_12px_40px_rgba(0,0,0,0.18)] sm:p-6">
+<article class="flex min-w-0 items-start gap-4 rounded-xl bg-[#F6F8FC] p-5 text-[#112952] shadow-[0_12px_40px_rgba(0,0,0,0.18)] sm:p-6" data-bottom-motion-contact>
   <div class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-[#E3ECFC] text-[#12499E]" aria-hidden="true">
     {contact.icon === 'headset' ? (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14v-3a9 9 0 0 1 18 0v3"/><path d="M3 13h3v7H5a2 2 0 0 1-2-2v-5Zm18 0h-3v7h1a2 2 0 0 0 2-2v-5Z"/></svg>

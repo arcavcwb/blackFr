@@ -8,7 +8,7 @@ interface Props { class?: string; }
 const { class: className = '' } = Astro.props;
 const baseAction = '[&>a]:inline-flex [&>button]:inline-flex [&>span]:inline-flex [&>*]:min-h-12 [&>*]:w-full [&>*]:items-center [&>*]:justify-center [&>*]:gap-2 [&>*]:px-5 [&>*]:py-3 [&>*]:text-center [&>*]:text-sm [&>*]:font-extrabold [&>*]:leading-snug [&>*]:transition-colors [&>*]:duration-200 [&>a:focus-visible]:outline [&>a:focus-visible]:outline-[3px] [&>a:focus-visible]:outline-offset-4 [&>a:focus-visible]:outline-[#FFE76A] [&>button:focus-visible]:outline [&>button:focus-visible]:outline-[3px] [&>button:focus-visible]:outline-offset-4 [&>button:focus-visible]:outline-[#FFE76A]';
 ---
-<div class:list={['mx-auto w-full max-w-[760px]', className]} aria-label="Acesse o app e consulte as informações da promoção">
+<div class:list={['mx-auto w-full max-w-[760px]', className]} aria-label="Acesse o app e consulte as informações da promoção" data-bottom-motion-actions>
   <div class:list={[
     baseAction,
     'mx-auto max-w-[580px] [&>*]:rounded-full [&>*]:bg-[#FFE86D] [&>*]:text-[#071A42] [&>a:hover]:bg-[#FFF39D] [&>button:hover]:bg-[#FFF39D]',

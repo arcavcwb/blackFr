@@ -10,7 +10,7 @@ interface Props { id?: string; class?: string }
 const { id = 'game-da-black-como-participar', class: className = '' } = Astro.props;
 const parts = (text: string) => text.split(/(\*\*[^*]+\*\*)/g).filter(Boolean);
 ---
-<section id={id} aria-labelledby={`${id}-title`} class:list={['game-steps', className]}>
+<section id={id} aria-labelledby={`${id}-title`} class:list={['game-steps', className]} data-gdb-motion-root>
   <div class="container">
     <header>
       <div class="logos">
@@ -20,9 +20,9 @@ const parts = (text: string) => text.split(/(\*\*[^*]+\*\*)/g).filter(Boolean);
       <h2 id={`${id}-title`}>{gameContent.passos.titulo}</h2>
       <div class="intro">{gameContent.linhas.map((line) => <p>{parts(line).map((part) => part.startsWith('**') ? <strong>{part.slice(2, -2)}</strong> : part)}</p>)}</div>
     </header>
-    <ol>
+    <ol data-gdb-motion-group>
       {participationSteps.map((step, index) => (
-        <li>
+        <li data-gdb-motion-card>
           <GameStepCard step={step} />
           {index < participationSteps.length - 1 && <span class="connector" aria-hidden="true">›</span>}
         </li>

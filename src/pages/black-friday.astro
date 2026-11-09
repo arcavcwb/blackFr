@@ -248,16 +248,51 @@ const ICONES_REDES: Record<string, string> = {
     </main>
 
     <script>
+      import { mountGameCardMotion } from '../features/game-da-black/motion';
+      import { mountBottomMotion } from '../features/black-friday-bottom/motion';
       import { mountHeroMotion } from '../features/black-friday-hero/motion';
       import { mountPremiaMotion } from '../features/condor-premia/motion';
       import { mountKeyVisualMotion } from '../features/game-da-black/motion/kv';
 
-      const disposers = [
-        ...[...document.querySelectorAll<HTMLElement>('[data-motion-hero]')].map(mountHeroMotion),
-        ...[...document.querySelectorAll<HTMLElement>('[data-motion-premia]')].map(mountPremiaMotion),
-        ...[...document.querySelectorAll<HTMLElement>('[data-motion-gdb]')].map(mountKeyVisualMotion),
-      ];
-      document.addEventListener('astro:before-swap', () => disposers.forEach((dispose) => dispose()), { once: true });
+      const motionCleanups: Array<() => void> = [];
+      for (const root of document.querySelectorAll<HTMLElement>('[data-motion-hero]')) {
+        try {
+          motionCleanups.push(mountHeroMotion(root));
+        } catch (error) {
+          console.error('No se pudo iniciar el motion del hero.', error);
+        }
+      }
+      for (const root of document.querySelectorAll<HTMLElement>('[data-motion-premia]')) {
+        try {
+          motionCleanups.push(mountPremiaMotion(root));
+        } catch (error) {
+          console.error('No se pudo iniciar el motion de Condor Premia.', error);
+        }
+      }
+      for (const root of document.querySelectorAll<HTMLElement>('[data-motion-gdb]')) {
+        try {
+          motionCleanups.push(mountKeyVisualMotion(root));
+        } catch (error) {
+          console.error('No se pudo iniciar el motion del key visual GDB.', error);
+        }
+      }
+      for (const root of document.querySelectorAll<HTMLElement>('[data-gdb-motion-root]')) {
+        try {
+          motionCleanups.push(mountGameCardMotion(root));
+        } catch (error) {
+          console.error('No se pudo iniciar el motion de las tarjetas GDB.', error);
+        }
+      }
+      for (const root of document.querySelectorAll<HTMLElement>('[data-bottom-motion-root]')) {
+        try {
+          motionCleanups.push(mountBottomMotion(root));
+        } catch (error) {
+          console.error('No se pudo iniciar el motion de la zona inferior.', error);
+        }
+      }
+      document.addEventListener('astro:before-swap', () => {
+        for (const cleanup of motionCleanups) cleanup();
+      }, { once: true });
     </script>
 
     <footer>

@@ -11,7 +11,7 @@ interface Props {
 }
 const { faqs, contacts = contactItems, id = 'pos-game-da-black' } = Astro.props;
 ---
-<div id={id} class="bg-[#08090D] px-4 pb-12 pt-10 text-white sm:px-6 sm:pb-16 sm:pt-16 lg:px-8">
+<div id={id} class="bg-[#08090D] px-4 pb-12 pt-10 text-white sm:px-6 sm:pb-16 sm:pt-16 lg:px-8" data-bottom-motion-root>
   <div class="mx-auto w-full max-w-[1200px]">
     <CampaignActions>
       <slot name="primary" slot="primary" />
