@@ -1,0 +1,26 @@
+/* Tailwind CSS 4 without Preflight: preserve existing campaign markup and assets. */
+@import "tailwindcss/theme.css";
+@import "tailwindcss/utilities.css";
+@import "./tokens.css";
+
+:where(html) {
+	text-size-adjust: 100%;
+}
+
+:where(body) {
+	margin: 0;
+}
+
+:where(a, button, summary, input, select, textarea):focus-visible {
+	outline: 3px solid #ffe76a;
+	outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	:where(*, *::before, *::after) {
+		scroll-behavior: auto !important;
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+}

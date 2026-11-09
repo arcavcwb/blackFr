@@ -1,0 +1,53 @@
+/*
+ * Values transcribed from the approved GDB C and lower-section references.
+ * Semantic names remain local implementation hooks, not global brand approval.
+ */
+@theme {
+	--color-core-canvas: #08090d;
+	--color-core-text: #ffffff;
+	--color-core-focus: #ffe76a;
+
+	--color-gdb-card-text: #e0ecff;
+	--color-gdb-card-start: #052049;
+	--color-gdb-card-end: #04172f;
+	--color-gdb-card-border: #16baff;
+	--color-gdb-badge-start: #fff83f;
+	--color-gdb-badge-end: #ffd500;
+	--color-gdb-badge-ink: #002255;
+	--color-gdb-title-start: #fff139;
+	--color-gdb-title-end: #ffd800;
+	--color-gdb-title-ink: #062958;
+	--color-gdb-bonus: #ffe500;
+
+	--color-ui-cta: #ffe86d;
+	--color-ui-cta-ink: #071a42;
+	--color-ui-cta-hover: #fff39d;
+	--color-ui-regulation: #081b38;
+	--color-ui-regulation-border: #24599a;
+	--color-ui-regulation-text: #e8f1ff;
+	--color-ui-offer: #82cfff;
+	--color-ui-faq: #0a1e3b;
+	--color-ui-faq-border: #244771;
+	--color-ui-faq-answer: #cfdeef;
+	--color-ui-contact: #f6f8fc;
+	--color-ui-contact-text: #112952;
+
+	--radius-control: 999px;
+	--radius-panel: 12px;
+}
+
+:root {
+	--page-gutter: 16px;
+}
+
+@media (min-width: 640px) {
+	:root {
+		--page-gutter: 24px;
+	}
+}
+
+@media (min-width: 1280px) {
+	:root {
+		--page-gutter: 32px;
+	}
+}
