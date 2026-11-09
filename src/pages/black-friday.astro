@@ -247,6 +247,19 @@ const ICONES_REDES: Record<string, string> = {
       </section>
     </main>
 
+    <script>
+      import { mountHeroMotion } from '../features/black-friday-hero/motion';
+      import { mountPremiaMotion } from '../features/condor-premia/motion';
+      import { mountKeyVisualMotion } from '../features/game-da-black/motion/kv';
+
+      const disposers = [
+        ...[...document.querySelectorAll<HTMLElement>('[data-motion-hero]')].map(mountHeroMotion),
+        ...[...document.querySelectorAll<HTMLElement>('[data-motion-premia]')].map(mountPremiaMotion),
+        ...[...document.querySelectorAll<HTMLElement>('[data-motion-gdb]')].map(mountKeyVisualMotion),
+      ];
+      document.addEventListener('astro:before-swap', () => disposers.forEach((dispose) => dispose()), { once: true });
+    </script>
+
     <footer>
       <hr class="bf-separador" />
 

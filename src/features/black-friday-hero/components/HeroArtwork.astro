@@ -16,6 +16,7 @@ const titleId = `${id}-title`;
 
 <section
 	id={id}
+	data-motion-hero
 	aria-labelledby={titleId}
 	class:list={['isolate overflow-hidden bg-black', className]}
 >
@@ -24,6 +25,7 @@ const titleId = `${id}-title`;
 	<div class="relative mx-auto aspect-[1440/914] w-full max-w-[1440px]">
 		<Image
 			src={heroBackground}
+			data-motion-hero-background
 			alt=""
 			aria-hidden="true"
 			class="absolute inset-0 z-0 block size-full object-contain"
@@ -33,6 +35,7 @@ const titleId = `${id}-title`;
 
 		<Image
 			src={heroTitle}
+			data-motion-hero-title
 			alt=""
 			aria-hidden="true"
 			class="absolute left-[2.5%] top-[24.6%] z-10 block h-auto w-[54.94%]"
@@ -43,6 +46,7 @@ const titleId = `${id}-title`;
 
 		<Image
 			src={heroPresenter}
+			data-motion-hero-presenter
 			alt=""
 			aria-hidden="true"
 			class="absolute bottom-0 right-0 z-20 block h-auto w-[45.14%]"

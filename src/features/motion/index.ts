@@ -1,8 +1,8 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { registerReveal, type MotionDriver, type RevealOptions } from './core';
+import { registerReveal, type MotionDriver, type RevealOptions } from './core.ts';
 
-export type { RevealOptions } from './core';
+export type { RevealOptions } from './core.ts';
 
 const driver: MotionDriver = {
   watch(target, enter) {

@@ -3,8 +3,10 @@ import GameStepsSection from './GameStepsSection.astro';
 import { gameContent } from '../../../data/landing-content';
 import keyVisual from '../../../../assets/originals/game-da-black/gdb-key-visual-v03.png';
 ---
-<div class="game-da-black">
-  <img src={keyVisual.src} width={keyVisual.width} height={keyVisual.height} alt={gameContent.imagemAlt} class="key-visual" loading="lazy" decoding="async" />
+<div class="game-da-black" data-motion-gdb>
+  <div data-motion-gdb-kv>
+    <img src={keyVisual.src} width={keyVisual.width} height={keyVisual.height} alt={gameContent.imagemAlt} class="key-visual" loading="lazy" decoding="async" />
+  </div>
   <GameStepsSection />
 </div>
 <style>
