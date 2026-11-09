@@ -213,7 +213,7 @@
       "phase": 1,
       "title": "QA de integración estática",
       "description": "",
-      "model": "codex/gpt-6-astra",
+      "model": "codex/gpt-5.6-terra",
       "reason": "Revisión integral independiente de la integración.",
       "status": "backlog",
       "dependencies": [
@@ -307,7 +307,7 @@
       "phase": 2,
       "title": "QA final de motion y rendimiento",
       "description": "",
-      "model": "codex/gpt-6-astra",
+      "model": "codex/gpt-5.6-terra",
       "reason": "Verificación integral, accesibilidad y rendimiento.",
       "status": "backlog",
       "dependencies": [
