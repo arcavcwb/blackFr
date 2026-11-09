@@ -1,0 +1,357 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BlackFridayHeroSection from '../features/black-friday-hero/components/BlackFridayHeroSection.astro';
+import CondorPremiaSection from '../features/condor-premia/components/CondorPremiaSection.astro';
+import ZonSection from '../features/z-on/components/ZonSection.astro';
+import GameDaBlack from '../features/game-da-black/components/GameDaBlack.astro';
+import PostGameBottom from '../features/black-friday-bottom/components/PostGameBottom.astro';
+import { faqPreviewItems } from '../features/black-friday-bottom/data/faqs-preview';
+import { aboutContent, footerContent, gameContent, menuItems, regulationContent, seoContent } from '../data/landing-content';
+import condorLogo from '../../assets/originals/branding/logo-condor-com-sombra.png';
+
+const [gameRegulation, blackRegulation, offers] = regulationContent.botoes;
+const reviewMode = import.meta.env.DEV;
+const parts = (text: string) => text.split(/(\*\*[^*]+\*\*)/g).filter(Boolean);
+
+// Preserve the existing footer icons from the original campaign source.
+// Ícones das redes (viewBox 0 0 24 24, um único path cada).
+// Copiados de components/sabores/Footer.astro para esta campanha não
+// depender de um arquivo de outra LP no ar.
+const ICONES_REDES: Record<string, string> = {
+  facebook:
+    "M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z",
+  instagram:
+    "M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z",
+  tiktok:
+    "M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z",
+  youtube:
+    "M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z",
+  linkedin:
+    "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z",
+  threads:
+    "M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.781 3.631 2.695 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.362-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.75-1.757-.513-.586-1.308-.883-2.359-.89h-.029c-.844 0-1.992.232-2.721 1.32L7.734 7.847c.98-1.454 2.568-2.256 4.478-2.256h.044c3.194.02 5.097 1.975 5.287 5.388.108.046.216.094.321.142 1.49.7 2.58 1.761 3.154 3.07.797 1.82.871 4.79-1.548 7.158-1.85 1.81-4.094 2.628-7.277 2.65Zm1.235-13.834c-.142 0-.285.004-.43.012-1.207.075-2.058.456-2.532 1.131-.346.493-.526 1.143-.504 1.835.067 1.224.689 2.275 1.752 2.964.897.583 2.057.866 3.259.801 1.59-.086 2.844-.688 3.73-1.79.662-.826 1.092-1.92 1.284-3.272a8.385 8.385 0 0 0-3.02-.142c-1.464.084-2.703.531-3.583 1.291",
+};
+---
+
+<BaseLayout title={seoContent.title} description={seoContent.description}>
+  <Fragment slot="head">
+    <meta name="theme-color" content="#000000" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={seoContent.title} />
+    <meta property="og:description" content={seoContent.description} />
+    <!-- The canonical OG image is still missing; do not emit a broken image URL. -->
+    <noscript><style>.mobile-menu { display: none; }</style></noscript>
+  </Fragment>
+  <div class="landing">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <nav aria-label="Seções da página" class="pointer-events-none fixed inset-x-0 top-0 z-40" data-menu>
+      <ul
+        class="bf-menu-pilula pointer-events-auto mx-auto mt-[55px] hidden h-[59px] w-[calc(100%-48px)] max-w-[1027px] items-center justify-around rounded-full bg-[#0003ef] px-3 md:flex"
+      >
+        {menuItems.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              class="bf-foco bf-menu-link rounded-full px-3 py-2 text-[14px] font-semibold text-white transition-[opacity,background-color] hover:opacity-75 lg:px-4 lg:text-[15px]"
+            >
+              {item.rotulo}
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <div class="mobile-menu md:hidden">
+        <button
+          type="button"
+          class="bf-foco bf-menu-botao pointer-events-auto absolute top-[35px] right-[12px] flex size-12 flex-col items-center justify-center gap-[4px] rounded-full bg-[#0003ef]"
+          aria-expanded="false"
+          aria-controls="bf-menu-movel"
+          aria-label="Abrir o menu"
+          data-menu-botao
+        >
+          <span class="h-[3px] w-[20px] rounded-full bg-white" aria-hidden="true"></span>
+          <span class="h-[3px] w-[20px] rounded-full bg-white" aria-hidden="true"></span>
+          <span class="h-[3px] w-[20px] rounded-full bg-white" aria-hidden="true"></span>
+        </button>
+
+        <dialog
+          id="bf-menu-movel"
+          class="bf-gaveta pointer-events-auto fixed inset-y-0 right-0 left-auto m-0 h-dvh max-h-none w-[min(320px,84vw)] max-w-none overflow-y-auto rounded-l-[28px] border-0 bg-[#0003ef] p-0 text-white"
+          aria-label="Menu"
+          data-menu-gaveta
+        >
+          <div class="flex min-h-full flex-col px-[24px] pt-[24px] pb-[32px]">
+            <div class="flex items-center justify-between">
+              <img
+                src={condorLogo.src}
+                alt="Condor"
+                width="134"
+                height="36"
+                class="h-auto w-[112px]"
+              />
+              <button
+                type="button"
+                class="bf-foco -mr-[10px] grid size-11 place-items-center rounded-full"
+                aria-label="Fechar o menu"
+                data-menu-fechar
+              >
+                <svg viewBox="0 0 24 24" class="size-[26px]" aria-hidden="true">
+                  <path d="M6 6l12 12M18 6 6 18" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" />
+                </svg>
+              </button>
+            </div>
+
+            <ul class="mt-[32px] flex flex-col">
+              {menuItems.map((item) => (
+                <li class="border-b border-white/25 last:border-b-0">
+                  <a href={item.href} class="bf-foco bf-menu-link -mx-[12px] flex min-h-[60px] items-center rounded-[14px] px-[12px] text-[20px] font-semibold text-white">
+                    {item.rotulo}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+
+    <script>
+      // Ao rolar, a pílula (e o botão no móvel) sobem para junto da borda.
+      const nav = document.querySelector<HTMLElement>("[data-menu]");
+      if (nav) {
+        let pendente = false;
+        const marcar = () => {
+          pendente = false;
+          if (scrollY > 80) nav.dataset.rolado = "";
+          else delete nav.dataset.rolado;
+        };
+        addEventListener("scroll", () => {
+          if (!pendente) {
+            pendente = true;
+            requestAnimationFrame(marcar);
+          }
+        }, { passive: true });
+        marcar();
+      }
+
+      // Secção atual: o link dela ganha aria-current, no desktop e no painel.
+      // Só conta âncora desta página («#sobre»): fora da LP os links levam o
+      // caminho na frente, e «/black-friday/#sobre» nem é um seletor válido.
+      const links = [...document.querySelectorAll<HTMLAnchorElement>(".bf-menu-link")];
+      const secoes = [...new Set(links.map((l) => l.getAttribute("href")))]
+        .map((h) => (h?.startsWith("#") ? document.querySelector<HTMLElement>(h) : null))
+        .filter((s): s is HTMLElement => !!s);
+      if ("IntersectionObserver" in window && secoes.length) {
+        const vigia = new IntersectionObserver(
+          (entradas) => {
+            for (const e of entradas) {
+              if (!e.isIntersecting) continue;
+              const alvo = `#${e.target.id}`;
+              for (const l of links) {
+                if (l.getAttribute("href") === alvo) l.setAttribute("aria-current", "true");
+                else l.removeAttribute("aria-current");
+              }
+            }
+          },
+          // A secção «atual» é a que cruza a faixa do meio do ecrã.
+          { rootMargin: "-45% 0px -50% 0px" },
+        );
+        for (const s of secoes) vigia.observe(s);
+      }
+
+      const botao = document.querySelector<HTMLButtonElement>("[data-menu-botao]");
+      const gaveta = document.querySelector<HTMLDialogElement>("[data-menu-gaveta]");
+
+      if (botao && gaveta) {
+        const reduzir = matchMedia("(prefers-reduced-motion: reduce)");
+
+        botao.addEventListener("click", () => {
+          gaveta.showModal();
+          botao.setAttribute("aria-expanded", "true");
+        });
+
+        gaveta.addEventListener("close", () => botao.setAttribute("aria-expanded", "false"));
+        gaveta.querySelector("[data-menu-fechar]")?.addEventListener("click", () => gaveta.close());
+
+        // Toque no fundo escurecido: o clique chega ao próprio <dialog> (o
+        // ::backdrop é dele), enquanto um toque no painel cai num filho.
+        gaveta.addEventListener("click", (e) => {
+          if (e.target === gaveta) gaveta.close();
+        });
+
+        // Fecha primeiro e rola depois. Ao fechar, o <dialog> devolve o foco ao
+        // botão de três barras, lá no topo; se o link navegasse sozinho, essa
+        // devolução puxava a página de volta para cima.
+        for (const link of gaveta.querySelectorAll<HTMLAnchorElement>('a[href^="#"]')) {
+          link.addEventListener("click", (e) => {
+            const href = link.getAttribute("href") ?? "";
+            const alvo = document.querySelector<HTMLElement>(href);
+            if (!alvo) return;
+            e.preventDefault();
+            gaveta.close();
+            history.replaceState(null, "", href);
+            alvo.scrollIntoView({ behavior: reduzir.matches ? "auto" : "smooth" });
+            // O foco segue para a secção, para quem navega por teclado ou leitor
+            // de ecrã continuar dali.
+            if (!alvo.hasAttribute("tabindex")) alvo.setAttribute("tabindex", "-1");
+            alvo.focus({ preventScroll: true });
+          });
+        }
+
+        // Se o ecrã crescer até ao desktop com o painel aberto, ele fecha: lá o
+        // menu é a pílula.
+        matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
+          if (e.matches && gaveta.open) gaveta.close();
+        });
+      }
+    </script>
+
+    <noscript>
+      <nav class="no-script-menu md:hidden" aria-label="Seções da página">
+        <ul>{menuItems.map((item) => <li><a href={item.href}>{item.rotulo}</a></li>)}</ul>
+      </nav>
+    </noscript>
+
+    <main id="conteudo" tabindex="-1">
+      <BlackFridayHeroSection />
+      <section id="sobre" class="about" aria-labelledby="sobre-titulo">
+        <hr class="bf-separador" />
+        <div class="about__copy">
+          <h2 id="sobre-titulo">{aboutContent.titulo}</h2>
+          {aboutContent.paragrafos.map((paragraph) => (
+            <p>{parts(paragraph).map((part) => part.startsWith('**') ? <strong>{part.slice(2, -2)}</strong> : part)}</p>
+          ))}
+        </div>
+      </section>
+      <CondorPremiaSection />
+      <ZonSection />
+      <section id="game-da-black" aria-label={gameContent.titulo}>
+        <GameDaBlack />
+      </section>
+      <section id="regulamento" aria-label={regulationContent.titulo}>
+        <PostGameBottom faqs={faqPreviewItems}>
+          <a slot="primary" href={gameContent.cta.href}>{gameContent.cta.rotulo} <span aria-hidden="true">↗</span></a>
+          {gameRegulation.href ? (
+            <a slot="regulation-game" href={gameRegulation.href}>{gameRegulation.rotulo}</a>
+          ) : (
+            <span slot="regulation-game">{gameRegulation.rotulo}</span>
+          )}
+          {blackRegulation.href ? (
+            <a slot="regulation-black" href={blackRegulation.href}>{blackRegulation.rotulo}</a>
+          ) : (
+            <span slot="regulation-black">{blackRegulation.rotulo}</span>
+          )}
+          <a slot="offers" href={offers.href}>{offers.rotulo}</a>
+        </PostGameBottom>
+      </section>
+    </main>
+
+    <footer>
+      <hr class="bf-separador" />
+
+      <div class="mx-auto flex w-[calc(100%-50px)] max-w-[1028px] flex-col items-center gap-[18px] py-[22px] lg:flex-row lg:justify-between lg:gap-[40px] lg:py-[50px]">
+        <img
+          src={condorLogo.src}
+          alt="Condor"
+          width="134"
+          height="36"
+          loading="lazy"
+          decoding="async"
+          class="h-auto w-[123px] shrink-0 lg:w-[134px]"
+        />
+
+        <p class="max-w-[552px] text-center text-[6px] leading-[1.35] font-medium text-white lg:text-[8px]">
+          {footerContent.legal}
+        </p>
+
+        <ul class="flex shrink-0 items-center gap-[3px] lg:gap-[4px]" aria-label="Redes sociais do Condor">
+          {footerContent.redes.map((r) => (
+            <li>
+              <a
+                href={r.href}
+                target="_blank"
+                rel="noopener"
+                class="bf-foco grid size-[24px] place-items-center rounded-full lg:size-[30px]"
+                style={`background-color: ${r.cor}`}
+                aria-label={r.rotulo}
+              >
+                <svg viewBox="0 0 24 24" class="size-[14px] lg:size-[16px]" style={`fill: ${r.corIcone ?? "#fff"}`} aria-hidden="true">
+                  <path d={ICONES_REDES[r.rede]} />
+                </svg>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="bg-[#0003ef] px-[24px] py-[18px] lg:py-[19px]">
+        <ul class="bf-rodape-links mx-auto flex max-w-[1240px] flex-wrap justify-center gap-x-[5px] gap-y-[2px] text-center text-[10px] leading-[1.4] font-medium text-white lg:gap-x-[10px] lg:text-[14px]">
+          {footerContent.links.map((l, i) => (
+            <li class="flex items-center justify-center gap-x-[5px] lg:gap-x-[10px]">
+              {i > 0 && <span class:list={[i === 2 && "hidden lg:inline"]} aria-hidden="true">|</span>}
+              {l.href ? (
+                <a href={l.href} target="_blank" rel="noopener" class="bf-foco rounded hover:underline">
+                  <span aria-hidden="true">{l.icone}</span> {l.rotulo}
+                </a>
+              ) : (
+                <span><span aria-hidden="true">{l.icone}</span> {l.rotulo}</span>
+              )}
+            </li>
+          ))}
+          <li class="mt-[12px] flex w-full items-center justify-center gap-x-[10px] lg:mt-0 lg:w-auto">
+            <span class="hidden lg:inline" aria-hidden="true">|</span>
+            {footerContent.copyright}
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    {reviewMode && (
+      <aside class="review-note" aria-label="Pendências editoriais para revisão">
+        Revisão local: FAQ provisório, destinos dos dois regulamentos, Lojas Participantes,
+        Política de Privacidade, certificado SPA/ME do rodapé e imagem OG aguardam validação.
+      </aside>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .landing { background: #000; color: #fff; font-family: Arial, system-ui, sans-serif; }
+  .landing :global(*) { box-sizing: border-box; }
+  .landing :global([id]) { scroll-margin-top: 92px; }
+  nav ul, footer ul { list-style: none; padding: 0; }
+  footer ul, footer p { margin: 0; }
+  footer a, .bf-menu-link, .skip-link, .no-script-menu a { text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  .bf-rodape-links { margin-inline: auto; }
+  .landing :global(.bf-foco:focus-visible) { outline: 2px solid #fff; outline-offset: 4px; }
+  .skip-link { position: fixed; top: 8px; left: 8px; z-index: 50; padding: 12px 16px; background: #0003ef; color: #fff; transform: translateY(-150%); }
+  .skip-link:focus { transform: translateY(0); }
+  .bf-menu-pilula { margin-block: 55px 0; padding-inline: 12px; }
+  .bf-menu-link { color: #fff; }
+  .bf-menu-link[aria-current] { background: rgb(255 255 255 / 0.15); }
+  [data-menu][data-rolado] .bf-menu-pilula { translate: 0 -43px; }
+  [data-menu][data-rolado] .bf-menu-botao { translate: 0 -23px; }
+  .bf-menu-botao, [data-menu-fechar] { border: 0; cursor: pointer; }
+  [data-menu-fechar] { background: transparent; color: inherit; }
+  .bf-gaveta ul { margin: 32px 0 0; }
+  .bf-gaveta::backdrop { background: rgb(0 0 0 / 0.7); }
+  .no-script-menu { background: #0003ef; padding: 12px; }
+  .no-script-menu ul { margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; }
+  .no-script-menu a { display: flex; align-items: center; min-height: 44px; padding: 8px; color: #fff; }
+  .bf-separador { margin: 0 auto; height: 2px; width: calc(100% - 56px); max-width: 1027px; border: 0; background: repeating-linear-gradient(90deg, #0003ef 0 8px, transparent 8px 16px); }
+  .about { padding-top: clamp(1.5rem, 1rem + 2vw, 3rem); }
+  .about__copy { width: min(913px, calc(100% - 76px)); margin: 40px auto 0; text-align: center; }
+  .about h2 { max-width: 199px; margin: 0 auto 20px; font-size: 20px; font-weight: 900; line-height: 1.2; letter-spacing: -0.02em; text-wrap: balance; }
+  .about p { margin: 0; font-size: 13px; font-weight: 300; line-height: 1.23; }
+  .about p + p { margin-top: 1em; }
+  .about strong { font-weight: 800; }
+  .review-note { max-width: 1028px; margin: 0 auto; padding: 24px; line-height: 1.5; }
+  @media (min-width: 768px) {
+    .about__copy { margin-top: 56px; }
+    .about h2 { max-width: none; margin-bottom: 28px; font-size: 32px; }
+    .about p { font-size: 26px; }
+  }
+  @media (max-width: 1023px) { .bf-rodape-links { max-width: 265px; } }
+</style>
